@@ -1,0 +1,51 @@
+.navbar-prime{
+
+    background-color: #091316;
+   
+}
+.lime-text{
+ color:#93b81d;
+}
+
+.side{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  padding:0;
+}
+
+.scroll-area{
+  width:100%;
+  height:calc(100% - 0px);
+  margin-top:50px;
+  float:left;
+  overflow-y:scroll;
+}
+
+.card-edit{
+
+  float: right;
+  margin-top: -25px;
+  margin-right: -10px;
+  padding: 10px;
+  background-color: #f0f8ff;
+}
+
+.card-edit:hover{
+  background-color: #c7e2f9;
+}
+
+.card-delete{
+float: right;
+margin-top: -25px !important;
+margin-right: -10px;
+padding: 10px;
+margin-left: 10px;   
+ background-color: #faebd7;
+}
+
+.card-delete:hover{
+ 
+ background-color: #f3d8b4
+}

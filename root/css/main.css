@@ -1,0 +1,155 @@
+* { box-sizing:border-box; }
+
+body {
+/*	font-family: Helvetica;
+	background: #eee; */
+  -webkit-font-smoothing: antialiased;
+}
+
+
+	  
+#primary-header {
+    background-color: #1565C0;
+    background-image: -webkit-radial-gradient(50% top, circle, rgba(33, 150, 243, 0.6) 0%, rgba(33, 150, 243, 0) 75%),-webkit-radial-gradient(right top, circle, #03A9F4 0%, rgba(3, 169, 244, 0) 57%);
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+    color: #64B5F6;
+    margin: 0;
+    position: relative;
+}
+#primary-footer {
+    background-color: #1565C0;
+    background-image: -webkit-radial-gradient(50% top, circle, rgba(33, 150, 243, 0.6) 0%, rgba(33, 150, 243, 0) 75%),-webkit-radial-gradient(right top, circle, #03A9F4 0%, rgba(3, 169, 244, 0) 57%);
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+    color: #64B5F6;
+    margin: 0;
+  }
+	  
+#header {
+    background-color: #0288d1;
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+    color: #64B5F6;
+    margin: 0;
+    position: relative;
+     font-family: 'GeosansLight';
+    
+}
+#footer {
+    background-color: #0288d1;
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+    color: #64B5F6;
+    margin: 0;
+	min-height: 30px;
+   font-family: 'GeosansLight';
+  }
+
+  @font-face {
+    font-family: 'GeosansLight'; /*a name to be used later*/
+    src: url('/css/fonts/GeosansLight.ttf'); /*URL to font*/
+}
+  @font-face {
+    font-family: 'QlassikBold_TB'; /*a name to be used later*/
+    src: url('/css/fonts/QlassikBold_TB.ttf'); /*URL to font*/
+ }
+
+ .font-qlass{
+font-family: 'QlassikBold_TB';
+ }
+
+ .signin-bg{
+background-image:url('/images/signin_background_4.jpg');
+   
+    background-size: cover;
+     background-repeat: no-repeat;
+     height: 600px;
+
+}
+ 
+
+/*Login input form*/
+/*
+h1 {
+  height: 100px;
+  width: 100%;
+  font-size: 18px;
+  background: #0288d1;
+  color: white;
+  line-height: 150%;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  box-sizing: border-box;
+  width: 260px;
+  margin: 100px auto 0;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 40px;
+  border-radius: 3px;
+}
+form h1 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+input {
+  margin: 40px 25px;
+  width: 200px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px #0288d1;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+          transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #0288d1 4%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #0288d1 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: #0288d1;
+}
+input:focus, input:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+  color: #0288d1;
+  font-size: 11px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  visibility: visible !important;
+}
+
+button {
+  border: none;
+  background: #0288d1;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px;
+  width: 200px;
+  color: white;
+  margin-left: 25px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+ 
+The magic happens in a few lines of code for the input:focus and input:valid. The CSS transform property plays a crucial role to achieve this little instant feedback effect.
+
+input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+  color: #0288d1;
+  font-size: 11px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  visibility: visible !important;
+}
+*/
+/**/

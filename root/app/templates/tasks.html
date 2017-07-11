@@ -1,0 +1,86 @@
+<div class="col-md-12">
+
+    <h1 style="color:'green';">
+        Tasks for : <i>{{selectedProject.name}}</i>
+    </h1>
+    <br/>
+    <md-input-container class="example-full-width" style="width:500px;">
+        <input [(ngModel)]="taskSummary" mdInput type="text" placeholder="Task Summary" name="projectName" />
+
+    </md-input-container>    
+
+    <!--<br/>-->
+    <md-select [(ngModel)]="taskStatus" placeholder="Status">
+        <md-option *ngFor="let item of statusList" [value]="item">{{item}}</md-option>
+    </md-select>
+
+    <md-input-container>
+        <input type="text"  [(ngModel)]="taskAssignee" mdInput  [mdAutocomplete]="auto" placeholder="Assignee" (ngModelChange)="findUser()">
+    </md-input-container>
+
+    <md-autocomplete #auto="mdAutocomplete"  >
+        <md-option *ngFor="let user of userFindList" [value]="user.displayName" (onSelectionChange)="selectUser(user)">
+            {{ user.displayName }}
+        </md-option>
+    </md-autocomplete>
+
+
+    <br/>
+
+    <button class="btn" (click)="addTask()" style="background-color:#93b81d;" md-raised-button type="submit">Add    </button>
+    <button class="btn" (click)="updateTask()" style="background-color:#93b81d;" md-raised-button type="submit">Update    </button>
+    <button class="btn" (click)="refresh()" style="background-color:#93b81d;" md-raised-button type="submit">Refresh    </button>
+
+</div>
+
+<br/>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <h3>Open</h3>
+
+            <md-card style="background: #eceff1;margin: 4px;border-left-style: solid;border-left-color:red;" *ngFor="let list of taskList | statusFilter : 'Open' ">
+                <md-card-content>
+                    <span (click)="deleteTask(list._id)" class="card-delete">X</span>
+                    <span (click)="editTask(list)" class="card-edit">EDIT</span>
+                    <h4> {{list.summary}}
+
+                    </h4>
+                    Status : {{list.status}}<br/> Assignee : {{list.assignee}}
+                    <hr size="3">
+                </md-card-content>
+            </md-card>
+
+        </div>
+        <div class="col-md-3">
+            <h3>In progress</h3>
+            <md-card style="background: #eceff1;margin: 4px;border-left-style: solid;border-left-color:yellow;" *ngFor="let list of taskList | statusFilter : 'In progress' ">
+                <md-card-content>
+                    <span (click)="deleteTask(list._id)" class="card-delete">X</span>
+                    <span (click)="editTask(list)" class="card-edit">EDIT</span>
+                    <h4> {{list.summary}}
+
+                    </h4>
+                    Status : {{list.status}}<br/> Assignee : {{list.assignee}}
+                    <hr size="3">
+                </md-card-content>
+            </md-card>
+
+        </div>
+        <div class="col-md-3">
+            <h3>Completed</h3>
+            <md-card style="background: #eceff1;margin: 4px;border-left-style: solid;border-left-color:green;" *ngFor="let list of taskList | statusFilter : 'Completed' ">
+                <md-card-content>
+                    <span (click)="deleteTask(list._id)" class="card-delete">X</span>
+                    <span (click)="editTask(list)" class="card-edit">EDIT</span>
+                    <h4> {{list.summary}}
+
+                    </h4>
+                    Status : {{list.status}}<br/> Assignee : {{list.assignee}}
+                    <hr size="3">
+                </md-card-content>
+            </md-card>
+
+        </div>
+    </div>
+</div>

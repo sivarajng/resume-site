@@ -1,0 +1,93 @@
+<div >
+    <md-card>
+        <md-card-header style="
+    background-color: #0288d1;
+    color: white;
+    font-size: large;
+">
+            <md-title>
+                Add User
+            </md-title>
+        </md-card-header>
+        <md-content style="padding: 10px;">
+
+            <form name="userAdd" ng-submit="addUser()">
+                <md-input-container flex="50">
+                    <label style="font-family: sans-serif;">First Name</label>
+                    <input type="text" required="" name="firstname" ng-model="userAdd.firstName" style="font-family: sans-serif;">
+                    <div ng-messages="projectForm.username.$error">
+                        <div ng-message="required">This is required.</div>
+                    </div>
+                </md-input-container>
+                <md-input-container flex="50">
+                    <label style="font-family: sans-serif;">Last Name</label>
+                    <input type="text" required="" name="lastname" ng-model="userAdd.lastName" style="font-family: sans-serif;">
+                    <div ng-messages="projectForm.password.$error">
+                        <div ng-message="required">This is required.</div>
+                    </div>
+                </md-input-container>
+                <br/>
+
+                <md-input-container flex="50">
+                    <label style="font-family: sans-serif;">Mobile Number</label>
+                    <input type="number" required="" ng-model="userAdd.mobile" style="font-family: sans-serif;">
+                    <div ng-messages="projectForm.password.$error">
+                        <div ng-message="required">This is required.</div>
+                    </div>
+                </md-input-container>
+
+
+                <md-input-container flex="50">
+                    <label style="font-family: sans-serif;">Email ID</label>
+                    <input type="email" ng-model="userAdd.emailId" style="font-family: sans-serif;">
+                    <div ng-messages="projectForm.password.$error">
+                        <div ng-message="required">This is required.</div>
+                    </div>
+                </md-input-container>
+                <br/>
+
+                <md-input-container flex="50">
+                    <label style="font-family: sans-serif;">Address</label>
+                    <input type="text" ng-model="userAdd.address" style="font-family: sans-serif;">
+                    <div ng-messages="projectForm.password.$error">
+                        <div ng-message="required">This is required.</div>
+                    </div>
+                </md-input-container>
+                <br/>
+
+                <md-input-container flex="50">
+                    <label style="font-family: sans-serif;">City</label>
+                    <input type="text" ng-model="userAdd.city" style="font-family: sans-serif;">
+                    <div ng-messages="projectForm.password.$error">
+                        <div ng-message="required">This is required.</div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container flex="50">
+                    <label style="font-family: sans-serif;">State</label>
+                    <input type="text" ng-model="userAdd.state" style="font-family: sans-serif;">
+                    <div ng-messages="projectForm.password.$error">
+                        <div ng-message="required">This is required.</div>
+                    </div>
+                </md-input-container>
+
+
+                <md-input-container flex="50">
+                    <label style="font-family: sans-serif;">PIN CODE</label>
+                    <input type="number" ng-model="userAdd.pincode" style="font-family: sans-serif;">
+                    <div ng-messages="projectForm.password.$error">
+                        <div ng-message="required">This is required.</div>
+                    </div>
+                </md-input-container>
+                <br/>
+
+
+                <md-button type="submit" class="md-raised md-primary" style="font-family: sans-serif;">Add User</md-button>
+
+
+            </form>
+
+        </md-content>
+    </md-card>
+
+</div>

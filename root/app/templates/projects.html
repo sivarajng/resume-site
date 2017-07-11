@@ -1,0 +1,36 @@
+<h1 style="color:'green';">
+    Projects  : <i>{{selectedProject.name}}</i>
+</h1>
+<br/>
+<md-input-container class="example-full-width">
+    <input [(ngModel)]="projectName" mdInput type="text" placeholder="Enter Project Name" name="projectName" />
+
+</md-input-container>
+
+<br/>
+
+<button class="btn" (click)="addProject()" style="background-color:#93b81d;" md-raised-button type="submit">Add    </button>
+<button class="btn" (click)="updateProject()" style="background-color:#93b81d;" md-raised-button type="submit">Update    </button>
+
+<button class="btn" (click)="refresh()" style="background-color:#93b81d;" md-raised-button type="submit">Refresh    </button>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+
+            <h3>Projects List</h3>
+
+            <md-card (click)="selectProject(list)" style="background: #eceff1;margin: 4px;border-left-style: solid;border-left-color:#009085;" *ngFor="let list of projectList">
+                <md-card-content>
+                    <span (click)="deleteProject(list._id)" class="card-delete">X</span>
+                    <span (click)="editProject(list)" class="card-edit">EDIT</span>
+          
+                    <h4> {{list.name}}
+
+                    </h4>
+                </md-card-content>
+            </md-card>
+
+        </div>
+    </div>
+</div>

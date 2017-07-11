@@ -1,0 +1,37 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "sivaraj",
+            "password": "sivaraj",
+            "displayName": "sivaraj",
+            "emails": [
+                {
+                    "value": "sivaraj@example.com"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "username": "kiran",
+            "password": "kiran",
+            "displayName": "kiran",
+            "emails": [
+                {
+                    "value": "kiran@example.com"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "username": "a",
+            "password": "a",
+            "displayName": "a",
+            "emails": [
+                {
+                    "value": "a@example.com"
+                }
+            ]
+        }
+    ]
+}
