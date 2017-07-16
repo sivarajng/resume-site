@@ -21,7 +21,8 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                 core_1.Component({
                     selector: 'app',
                     //directives: [ HelloComponent ],
-                    templateUrl: './app/templates/app.html'
+                    template: 'Hello Srish !'
+                    // templateUrl: './app/templates/app.html'
                 })
             ], AppComponent);
             exports_1("AppComponent", AppComponent);

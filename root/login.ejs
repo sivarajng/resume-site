@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Taskimon</title>
+  <base href="/" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ng2-bootstrap/x.x.x/ng2-bootstrap.min.js"></script>-->
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <!-- Load the Angular Material stylesheet -->
+  <link href="https://unpkg.com/@angular/material/prebuilt-themes/indigo-pink.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+  <style>
+    body {
+      font-family: Roboto, Arial, sans-serif;
+    }
+  </style>
+
+
+  <!--<link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/spinner.css">
+
+
+
+  <!--
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/reflect-metadata/Reflect.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  -->
+
+  <script src="js/lib/shim.min.js"></script>
+  <script src="js/lib/zone.js"></script>
+  <script src="js/lib/Reflect.js"></script>
+  <script src="js/lib/system.src.js"></script>
+
+  <script src="systemjs.login.config.js"></script>
+
+  <script>
+    System.import('login').catch(function (err) { console.error(err); });
+  </script>
+</head>
+
+<body style="overflow:hidden;">
+  <login>
+    <div class="spinner-align vertical-center">
+      <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="https://www.w3.org/2000/svg">
+        <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+      </svg>
+    </div>
+  </login>
+
+
+</body>
+
+</html>

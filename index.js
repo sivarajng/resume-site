@@ -42,7 +42,7 @@ app.use(require('express-session')({ secret: 'keyboard cat', resave: false, save
 // Define routes.
 app.get('/',
   (req, res) => {
-    res.end("OK")
+    res.render('login');
   }
 );
 
