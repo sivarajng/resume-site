@@ -7,3 +7,5 @@ export { Tasks } from './tasks';
 export { Projects } from './projects';
 export { StatusFilterPipe } from './statusFilterPipe';
 export { BlazerLevel } from './blazerLevel';
+export { Portrait } from './portrait';
+export { RootContent } from './rootContent';

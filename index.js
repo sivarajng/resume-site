@@ -40,13 +40,17 @@ app.use(require('express-session')({ secret: 'keyboard cat', resave: false, save
 
 
 // Define routes.
-app.get('/',
+app.get('/login',
   (req, res) => {
     res.render('login');
   }
 );
 
 app.get('/srish',
+  routes.index
+);
+
+app.get('/',
   routes.index
 );
 

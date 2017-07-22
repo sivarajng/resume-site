@@ -7,7 +7,7 @@ System.register(["@angular/core"], function (exports_1, context_1) {
         return c > 3 && r && Object.defineProperty(target, key, r), r;
     };
     var __moduleName = context_1 && context_1.id;
-    var core_1, AppComponent;
+    var core_1, Portrait;
     return {
         setters: [
             function (core_1_1) {
@@ -15,16 +15,16 @@ System.register(["@angular/core"], function (exports_1, context_1) {
             }
         ],
         execute: function () {
-            AppComponent = class AppComponent {
+            Portrait = class Portrait {
             };
-            AppComponent = __decorate([
+            Portrait = __decorate([
                 core_1.Component({
-                    selector: 'app',
-                    templateUrl: './app/templates/app.html'
+                    selector: 'portrait',
+                    templateUrl: './app/templates/portrait.html'
                 })
-            ], AppComponent);
-            exports_1("AppComponent", AppComponent);
+            ], Portrait);
+            exports_1("Portrait", Portrait);
         }
     };
 });
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=portrait.js.map

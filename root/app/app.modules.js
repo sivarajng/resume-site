@@ -46,11 +46,27 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/forms",
             AppModule = __decorate([
                 core_1.NgModule({
                     imports: [
-                        platform_browser_1.BrowserModule, animations_1.BrowserAnimationsModule,
-                        forms_1.FormsModule, material_1.MdInputModule, material_1.MaterialModule, material_1.MdNativeDateModule, routes_1.appRoutes, http_1.HttpModule
+                        platform_browser_1.BrowserModule,
+                        animations_1.BrowserAnimationsModule,
+                        forms_1.FormsModule,
+                        material_1.MdInputModule,
+                        material_1.MaterialModule,
+                        material_1.MdNativeDateModule,
+                        routes_1.appRoutes,
+                        http_1.HttpModule
                     ],
                     declarations: [
-                        index_1.AppComponent, index_1.SideNav, index_1.NavBar, index_1.RouterView, index_1.Dashboard, index_1.Tasks, index_1.Projects, index_1.StatusFilterPipe, index_1.BlazerLevel
+                        index_1.AppComponent,
+                        index_1.SideNav,
+                        index_1.NavBar,
+                        index_1.RouterView,
+                        index_1.Dashboard,
+                        index_1.Tasks,
+                        index_1.Projects,
+                        index_1.StatusFilterPipe,
+                        index_1.BlazerLevel,
+                        index_1.Portrait,
+                        index_1.RootContent
                     ],
                     bootstrap: [
                         index_1.AppComponent

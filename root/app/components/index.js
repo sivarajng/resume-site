@@ -1,4 +1,4 @@
-System.register(["./app", "./navBar", "./routerView", "./sideNav", "./dashboard", "./tasks", "./projects", "./statusFilterPipe", "./blazerLevel"], function (exports_1, context_1) {
+System.register(["./app", "./navBar", "./routerView", "./sideNav", "./dashboard", "./tasks", "./projects", "./statusFilterPipe", "./blazerLevel", "./portrait", "./rootContent"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     return {
@@ -46,6 +46,16 @@ System.register(["./app", "./navBar", "./routerView", "./sideNav", "./dashboard"
             function (blazerLevel_1_1) {
                 exports_1({
                     "BlazerLevel": blazerLevel_1_1["BlazerLevel"]
+                });
+            },
+            function (portrait_1_1) {
+                exports_1({
+                    "Portrait": portrait_1_1["Portrait"]
+                });
+            },
+            function (rootContent_1_1) {
+                exports_1({
+                    "RootContent": rootContent_1_1["RootContent"]
                 });
             }
         ],

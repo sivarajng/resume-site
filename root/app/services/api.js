@@ -10,7 +10,7 @@ System.register(["@angular/core", "@angular/http", "rxjs/add/operator/map", "rxj
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var __moduleName = context_1 && context_1.id;
-    var core_1, http_1, APIService, _a;
+    var core_1, http_1, APIService;
     return {
         setters: [
             function (core_1_1) {
@@ -133,7 +133,7 @@ System.register(["@angular/core", "@angular/http", "rxjs/add/operator/map", "rxj
             };
             APIService = __decorate([
                 core_1.Injectable(),
-                __metadata("design:paramtypes", [typeof (_a = typeof http_1.Http !== "undefined" && http_1.Http) === "function" && _a || Object])
+                __metadata("design:paramtypes", [http_1.Http])
             ], APIService);
             exports_1("APIService", APIService);
         }
