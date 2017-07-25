@@ -10,7 +10,7 @@ System.register(["@angular/core"], function (exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var __moduleName = context_1 && context_1.id;
-    var core_1, GlobalData;
+    var core_1, siteData, GlobalData;
     return {
         setters: [
             function (core_1_1) {
@@ -18,9 +18,15 @@ System.register(["@angular/core"], function (exports_1, context_1) {
             }
         ],
         execute: function () {
+            siteData = {
+                navigation: ["Home", "About"]
+            };
             GlobalData = class GlobalData {
-                constructor() {
+                constructor(siteData) {
+                    this.siteData = siteData;
                     this.selectedProject = {};
+                    this.siteData = siteData;
+                    console.log(this.siteData);
                 }
                 setSelectedProject(data) {
                     this.selectedProject = data;
@@ -28,10 +34,13 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                 getSelectedProject() {
                     return this.selectedProject;
                 }
+                getsiteData() {
+                    return this.siteData;
+                }
             };
             GlobalData = __decorate([
                 core_1.Injectable(),
-                __metadata("design:paramtypes", [])
+                __metadata("design:paramtypes", [Object])
             ], GlobalData);
             exports_1("GlobalData", GlobalData);
         }

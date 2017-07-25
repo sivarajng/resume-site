@@ -23,6 +23,7 @@
   };
 
   var ngPackageNames = [
+    'cdk',
     'common',
     'compiler',
     'animations',
