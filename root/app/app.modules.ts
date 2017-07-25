@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { MdInputModule, MaterialModule, MdNativeDateModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { App, Portrait, Resume } from './components/index';
+import { App, Portrait, Resume ,NavBar} from './components/index';
 import { RouterModule, Routes } from '@angular/router';
 // import { appRoutes } from './routes/routes';
 import { CommonService, APIService, GlobalData } from './services/index';
@@ -35,7 +35,7 @@ declare var $: any;
     // , appRoutes
     ],
   declarations: [
-    App, Portrait, Resume
+    App, Portrait, Resume,NavBar
   ],
   bootstrap: [
     App

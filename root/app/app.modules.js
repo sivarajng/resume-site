@@ -60,7 +60,7 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/forms",
                         // , appRoutes
                     ],
                     declarations: [
-                        index_1.App, index_1.Portrait, index_1.Resume
+                        index_1.App, index_1.Portrait, index_1.Resume, index_1.NavBar
                     ],
                     bootstrap: [
                         index_1.App

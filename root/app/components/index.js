@@ -1,4 +1,4 @@
-System.register(["./app", "./portrait", "./resume"], function (exports_1, context_1) {
+System.register(["./app", "./portrait", "./resume", "./navBar"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     return {
@@ -16,6 +16,11 @@ System.register(["./app", "./portrait", "./resume"], function (exports_1, contex
             function (resume_1_1) {
                 exports_1({
                     "Resume": resume_1_1["Resume"]
+                });
+            },
+            function (navBar_1_1) {
+                exports_1({
+                    "NavBar": navBar_1_1["NavBar"]
                 });
             }
         ],
