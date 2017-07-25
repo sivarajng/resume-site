@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { SideNav, NavBar ,Portrait,RootContent} from '../components'
+import { Portrait, Resume } from '../components'
+import { GlobalData } from '../services/globalData'
 
 
 @Component({
@@ -9,8 +10,12 @@ import { SideNav, NavBar ,Portrait,RootContent} from '../components'
 
 })
 
-export class AppComponent {
+export class App {
 
+  constructor(private globalData: GlobalData) {
+
+    console.log('globalData ', this.globalData.getResumeData())
+  }
 
 
 }

@@ -54,6 +54,12 @@ app.get('/',
   routes.index
 );
 
+app.get('/resume',
+  (req, res) => {
+    res.json({status:"ok"});
+  }
+);
+
 
 /////////////////////////////
 app.get('*', function (req, res) {

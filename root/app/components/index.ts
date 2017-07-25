@@ -1,11 +1,3 @@
-export { AppComponent } from './app';
-export { NavBar } from './navBar';
-export { RouterView } from './routerView';
-export { SideNav } from './sideNav';
-export { Dashboard } from './dashboard';
-export { Tasks } from './tasks';
-export { Projects } from './projects';
-export { StatusFilterPipe } from './statusFilterPipe';
-export { BlazerLevel } from './blazerLevel';
+export { App } from './app';
 export { Portrait } from './portrait';
-export { RootContent } from './rootContent';
+export { Resume } from './resume';

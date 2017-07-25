@@ -1,4 +1,4 @@
-System.register(["@angular/core", "@angular/platform-browser", "@angular/forms", "@angular/material", "@angular/platform-browser/animations", "./components/index", "./routes/routes", "./services/index", "@angular/http", "hammerjs"], function (exports_1, context_1) {
+System.register(["@angular/core", "@angular/platform-browser", "@angular/forms", "@angular/material", "@angular/platform-browser/animations", "./components/index", "./services/index", "@angular/http", "./startup", "hammerjs"], function (exports_1, context_1) {
     "use strict";
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -7,7 +7,11 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/forms",
         return c > 3 && r && Object.defineProperty(target, key, r), r;
     };
     var __moduleName = context_1 && context_1.id;
-    var core_1, platform_browser_1, forms_1, material_1, animations_1, index_1, routes_1, index_2, http_1, AppModule;
+    function startupServiceFactory(startupService) {
+        return () => startupService.load();
+    }
+    exports_1("startupServiceFactory", startupServiceFactory);
+    var core_1, platform_browser_1, forms_1, material_1, animations_1, index_1, index_2, http_1, startup_1, AppModule;
     return {
         setters: [
             function (core_1_1) {
@@ -28,14 +32,14 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/forms",
             function (index_1_1) {
                 index_1 = index_1_1;
             },
-            function (routes_1_1) {
-                routes_1 = routes_1_1;
-            },
             function (index_2_1) {
                 index_2 = index_2_1;
             },
             function (http_1_1) {
                 http_1 = http_1_1;
+            },
+            function (startup_1_1) {
+                startup_1 = startup_1_1;
             },
             function (_1) {
             }
@@ -52,26 +56,28 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/forms",
                         material_1.MdInputModule,
                         material_1.MaterialModule,
                         material_1.MdNativeDateModule,
-                        routes_1.appRoutes,
                         http_1.HttpModule
+                        // , appRoutes
                     ],
                     declarations: [
-                        index_1.AppComponent,
-                        index_1.SideNav,
-                        index_1.NavBar,
-                        index_1.RouterView,
-                        index_1.Dashboard,
-                        index_1.Tasks,
-                        index_1.Projects,
-                        index_1.StatusFilterPipe,
-                        index_1.BlazerLevel,
-                        index_1.Portrait,
-                        index_1.RootContent
+                        index_1.App, index_1.Portrait, index_1.Resume
                     ],
                     bootstrap: [
-                        index_1.AppComponent
+                        index_1.App
                     ],
-                    providers: [index_2.CommonService, index_2.APIService, index_2.GlobalData]
+                    providers: [
+                        startup_1.StartupService,
+                        {
+                            // Provider for APP_INITIALIZER
+                            provide: core_1.APP_INITIALIZER,
+                            useFactory: startupServiceFactory,
+                            deps: [startup_1.StartupService],
+                            multi: true
+                        },
+                        index_2.GlobalData,
+                        index_2.CommonService,
+                        index_2.APIService
+                    ]
                 })
             ], AppModule);
             exports_1("AppModule", AppModule);

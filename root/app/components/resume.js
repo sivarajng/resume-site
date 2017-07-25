@@ -7,7 +7,7 @@ System.register(["@angular/core"], function (exports_1, context_1) {
         return c > 3 && r && Object.defineProperty(target, key, r), r;
     };
     var __moduleName = context_1 && context_1.id;
-    var core_1, RouterView;
+    var core_1, Resume;
     return {
         setters: [
             function (core_1_1) {
@@ -15,16 +15,16 @@ System.register(["@angular/core"], function (exports_1, context_1) {
             }
         ],
         execute: function () {
-            RouterView = class RouterView {
+            Resume = class Resume {
             };
-            RouterView = __decorate([
+            Resume = __decorate([
                 core_1.Component({
-                    selector: 'router-view',
-                    templateUrl: './app/templates/routerView.html'
+                    selector: 'resume',
+                    templateUrl: './app/templates/resume.html'
                 })
-            ], RouterView);
-            exports_1("RouterView", RouterView);
+            ], Resume);
+            exports_1("Resume", Resume);
         }
     };
 });
-//# sourceMappingURL=routerView.js.map
+//# sourceMappingURL=resume.js.map

@@ -1,23 +1,28 @@
 import { Injectable } from '@angular/core';
+import { StartupService } from '../startup';
 
-const siteData = {
-    navigation: ["Home", "About"]
-};
 
-console.log(siteData);
 @Injectable()
 export class GlobalData {
-    constructor() {
-    
+
+
+    selectedProject = {};
+    resumeData = {}
+
+    constructor(private startupService: StartupService) {
+        this.resumeData = this.startupService.getResumeData();
     }
 
- selectedProject = {};
 
-setSelectedProject(data) {
-    this.selectedProject = data;
-}
+    setSelectedProject(data) {
+        this.selectedProject = data;
+    }
 
-getSelectedProject() {
-    return this.selectedProject;
-}
+    getSelectedProject() {
+        return this.selectedProject;
+    }
+
+    getResumeData() {
+        return this.resumeData;
+    }
 }
