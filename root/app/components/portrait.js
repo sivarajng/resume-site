@@ -20,7 +20,8 @@ System.register(["@angular/core"], function (exports_1, context_1) {
             Portrait = __decorate([
                 core_1.Component({
                     selector: 'portrait',
-                    templateUrl: './app/templates/portrait.html'
+                    templateUrl: './app/templates/portrait.html',
+                    styleUrls: ['./app/styles/portrait.css'],
                 })
             ], Portrait);
             exports_1("Portrait", Portrait);
