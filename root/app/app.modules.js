@@ -1,4 +1,4 @@
-System.register(["@angular/core", "@angular/platform-browser", "@angular/forms", "@angular/material", "@angular/platform-browser/animations", "./components/index", "./routes/routes", "./services/index", "@angular/http", "./startup", "hammerjs"], function (exports_1, context_1) {
+System.register(["@angular/core", "@angular/platform-browser", "@angular/platform-browser/animations", "@angular/forms", "@angular/material", "@angular/cdk", "./components/index", "./routes/routes", "./services/index", "@angular/http", "./startup", "hammerjs"], function (exports_1, context_1) {
     "use strict";
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -11,7 +11,7 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/forms",
         return () => startupService.load();
     }
     exports_1("startupServiceFactory", startupServiceFactory);
-    var core_1, platform_browser_1, forms_1, material_1, animations_1, index_1, routes_1, index_2, http_1, startup_1, AppModule;
+    var core_1, platform_browser_1, animations_1, forms_1, material_1, cdk_1, index_1, routes_1, index_2, http_1, startup_1, AppMaterialModule, AppModule;
     return {
         setters: [
             function (core_1_1) {
@@ -20,14 +20,17 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/forms",
             function (platform_browser_1_1) {
                 platform_browser_1 = platform_browser_1_1;
             },
+            function (animations_1_1) {
+                animations_1 = animations_1_1;
+            },
             function (forms_1_1) {
                 forms_1 = forms_1_1;
             },
             function (material_1_1) {
                 material_1 = material_1_1;
             },
-            function (animations_1_1) {
-                animations_1 = animations_1_1;
+            function (cdk_1_1) {
+                cdk_1 = cdk_1_1;
             },
             function (index_1_1) {
                 index_1 = index_1_1;
@@ -48,6 +51,47 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/forms",
             }
         ],
         execute: function () {
+            AppMaterialModule = class AppMaterialModule {
+            };
+            AppMaterialModule = __decorate([
+                core_1.NgModule({
+                    exports: [
+                        cdk_1.CdkTableModule,
+                        material_1.MdAutocompleteModule,
+                        material_1.MdButtonModule,
+                        material_1.MdButtonToggleModule,
+                        material_1.MdCardModule,
+                        material_1.MdCheckboxModule,
+                        material_1.MdChipsModule,
+                        material_1.MdCoreModule,
+                        material_1.MdDatepickerModule,
+                        material_1.MdDialogModule,
+                        material_1.MdExpansionModule,
+                        material_1.MdGridListModule,
+                        material_1.MdIconModule,
+                        material_1.MdInputModule,
+                        material_1.MdListModule,
+                        material_1.MdMenuModule,
+                        material_1.MdNativeDateModule,
+                        material_1.MdPaginatorModule,
+                        material_1.MdProgressBarModule,
+                        material_1.MdProgressSpinnerModule,
+                        material_1.MdRadioModule,
+                        material_1.MdRippleModule,
+                        material_1.MdSelectModule,
+                        material_1.MdSidenavModule,
+                        material_1.MdSliderModule,
+                        material_1.MdSlideToggleModule,
+                        material_1.MdSnackBarModule,
+                        material_1.MdSortModule,
+                        material_1.MdTableModule,
+                        material_1.MdTabsModule,
+                        material_1.MdToolbarModule,
+                        material_1.MdTooltipModule,
+                    ]
+                })
+            ], AppMaterialModule);
+            exports_1("AppMaterialModule", AppMaterialModule);
             AppModule = class AppModule {
             };
             AppModule = __decorate([
@@ -57,8 +101,7 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/forms",
                         animations_1.BrowserAnimationsModule,
                         forms_1.FormsModule,
                         material_1.MdInputModule,
-                        material_1.MaterialModule,
-                        material_1.MdNativeDateModule,
+                        AppMaterialModule,
                         http_1.HttpModule,
                         routes_1.appRoutes
                     ],
