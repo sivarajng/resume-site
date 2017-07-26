@@ -712,10 +712,10 @@ ul.no-list-style {
     opacity: 0;
     z-index: 10;
     position: relative;
-    padding: .9375rem 1.25rem;
+    padding: .6rem .6rem;
     font-family: "Montserrat", sans-serif;
     font-style: italic;
-    font-size: .875rem;
+    font-size: .6rem;
     text-transform: uppercase;
     color: #fff
 }
@@ -732,9 +732,9 @@ ul.no-list-style {
     -webkit-transition: all 0.15s;
     -moz-transition: all 0.15s;
     transition: all 0.15s;
-    background-color: #2A54F5;
-    background-image: -webkit-linear-gradient(-315deg, #2A54F5 0%, #33E5BB 100%);
-    background-image: linear-gradient(45deg, #2A54F5 0%, #33E5BB 100%);
+    background-color: #03a9f4;
+    /*background-image: -webkit-linear-gradient(-315deg, #2A54F5 0%, #33E5BB 100%);*/
+    /*background-image: linear-gradient(45deg, #2A54F5 0%, #33E5BB 100%);*/
     position: absolute;
     z-index: 10;
     top: 0;

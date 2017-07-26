@@ -9,7 +9,7 @@
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  
+
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/jquery.multilevelpushmenu.css">
 
+
   <script type="text/javascript" src="https://oss.maxcdn.com/libs/modernizr/2.6.2/modernizr.min.js"></script>
 
   <script src="js/lib/jquery.multilevelpushmenu.min.js"></script>
@@ -42,9 +43,9 @@
   <link rel="stylesheet" href="css/spinner.css">
   <link rel="stylesheet" href="css/app.css">
 
+  <link rel="stylesheet" href="app/styles/portrait.css">
 
 
- 
 
   <script src="js/lib/shim.min.js"></script>
   <script src="js/lib/zone.js"></script>
@@ -61,11 +62,26 @@
 
 <body>
   <app>
-    <div class="spinner-align vertical-center">
-      <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="https://www.w3.org/2000/svg">
-        <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
-      </svg>
+
+    <div class="container fluid" style="overflow:'hidden';">
+      <div class="row">
+
+         <% include app/templates/portrait.html %>
+
+        <div class="col-md-7" style="overflow-y: scroll;height: 100vh;">
+          <div class="vertical-center">
+            <div class="spinner-align vertical-center">
+              <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="https://www.w3.org/2000/svg">
+                <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+
+
   </app>
 
 </body>
