@@ -4,9 +4,20 @@ import { FormsModule } from '@angular/forms';
 import { MdInputModule, MaterialModule, MdNativeDateModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { App, Portrait, Resume ,NavBar} from './components/index';
+import {
+  App
+  , Portrait
+  , Resume
+  , NavBar
+  , Home
+  , Skills
+  , Certifications
+  , Experience
+  , Academy
+  , Projects
+} from './components/index';
 import { RouterModule, Routes } from '@angular/router';
-// import { appRoutes } from './routes/routes';
+import { appRoutes } from './routes/routes';
 import { CommonService, APIService, GlobalData } from './services/index';
 import { HttpModule } from '@angular/http';
 // import { MyResolver } from './services/resolve';
@@ -32,10 +43,19 @@ declare var $: any;
     , MaterialModule
     , MdNativeDateModule
     , HttpModule
-    // , appRoutes
-    ],
+    , appRoutes
+  ],
   declarations: [
-    App, Portrait, Resume,NavBar
+    App
+    , Portrait
+    , Resume
+    , NavBar
+    , Home
+    , Skills
+    , Certifications
+    , Experience
+    , Academy
+    , Projects
   ],
   bootstrap: [
     App

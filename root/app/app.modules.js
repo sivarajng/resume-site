@@ -1,4 +1,4 @@
-System.register(["@angular/core", "@angular/platform-browser", "@angular/forms", "@angular/material", "@angular/platform-browser/animations", "./components/index", "./services/index", "@angular/http", "./startup", "hammerjs"], function (exports_1, context_1) {
+System.register(["@angular/core", "@angular/platform-browser", "@angular/forms", "@angular/material", "@angular/platform-browser/animations", "./components/index", "./routes/routes", "./services/index", "@angular/http", "./startup", "hammerjs"], function (exports_1, context_1) {
     "use strict";
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -11,7 +11,7 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/forms",
         return () => startupService.load();
     }
     exports_1("startupServiceFactory", startupServiceFactory);
-    var core_1, platform_browser_1, forms_1, material_1, animations_1, index_1, index_2, http_1, startup_1, AppModule;
+    var core_1, platform_browser_1, forms_1, material_1, animations_1, index_1, routes_1, index_2, http_1, startup_1, AppModule;
     return {
         setters: [
             function (core_1_1) {
@@ -31,6 +31,9 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/forms",
             },
             function (index_1_1) {
                 index_1 = index_1_1;
+            },
+            function (routes_1_1) {
+                routes_1 = routes_1_1;
             },
             function (index_2_1) {
                 index_2 = index_2_1;
@@ -56,11 +59,20 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/forms",
                         material_1.MdInputModule,
                         material_1.MaterialModule,
                         material_1.MdNativeDateModule,
-                        http_1.HttpModule
-                        // , appRoutes
+                        http_1.HttpModule,
+                        routes_1.appRoutes
                     ],
                     declarations: [
-                        index_1.App, index_1.Portrait, index_1.Resume, index_1.NavBar
+                        index_1.App,
+                        index_1.Portrait,
+                        index_1.Resume,
+                        index_1.NavBar,
+                        index_1.Home,
+                        index_1.Skills,
+                        index_1.Certifications,
+                        index_1.Experience,
+                        index_1.Academy,
+                        index_1.Projects
                     ],
                     bootstrap: [
                         index_1.App

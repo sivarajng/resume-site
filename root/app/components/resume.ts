@@ -1,5 +1,13 @@
 import { Component } from '@angular/core';
-import { NavBar } from './navBar';
+import {
+  NavBar
+  , Home
+  , Skills
+  , Certifications
+  , Experience
+  , Academy
+  , Projects
+} from '../components';
 
 @Component({
   selector: 'resume',
