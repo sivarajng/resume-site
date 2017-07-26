@@ -20,7 +20,8 @@ System.register(["@angular/core"], function (exports_1, context_1) {
             Academy = __decorate([
                 core_1.Component({
                     selector: 'academy',
-                    templateUrl: './app/templates/academy.html'
+                    templateUrl: './app/templates/academy.html',
+                    styleUrls: ['card.css']
                 })
             ], Academy);
             exports_1("Academy", Academy);
