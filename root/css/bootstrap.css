@@ -30,7 +30,8 @@ header {
 }
 
 .col-md-7 {   
-    background: #091316;
+    /* background: #091316; */
+    background: #fff;
 }
 .col-md-5 {
     background: #fff;  	
