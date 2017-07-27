@@ -825,16 +825,16 @@ ul.no-list-style {
     padding: .3125rem;
     opacity: 0
 }
-.block__social__link:before {
-    background-color: #33E5BB;
-    background-image: -webkit-linear-gradient(-360deg, #33E5BB 0%, #2A54F5 100%);
-    background-image: linear-gradient(90deg, #33E5BB 0%, #2A54F5 100%);
-    -webkit-transform: scaleX(0);
+.block__social__link:hover {
+    /*background-color: #33E5BB;*/
+    /*background-image: -webkit-linear-gradient(-360deg, #33E5BB 0%, #2A54F5 100%);
+    background-image: linear-gradient(90deg, #33E5BB 0%, #2A54F5 100%);*/
+    /*-webkit-transform: scaleX(0);
     -moz-transform: scaleX(0);
     -ms-transform: scaleX(0);
     -o-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: center right;
+    transform: scaleX(0);*/
+    /*-webkit-transform-origin: center right;
     -moz-transform-origin: center right;
     -ms-transform-origin: center right;
     -o-transform-origin: center right;
@@ -849,10 +849,15 @@ ul.no-list-style {
     left: 0px;
     right: 0px;
     height: .125rem;
-    pointer-events: none
+    pointer-events: none;*/
+     -webkit-transform: scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
 }
 .block__social__link:hover::before {
-    -webkit-transform: scaleX(1);
+    /*-webkit-transform: scaleX(1);
     -moz-transform: scaleX(1);
     -ms-transform: scaleX(1);
     -o-transform: scaleX(1);
@@ -862,7 +867,7 @@ ul.no-list-style {
     -ms-transform-origin: center left;
     -o-transform-origin: center left;
     transform-origin: center left;
-    transition-delay: 0s
+    transition-delay: 0s*/
 }
 .block__social__link svg {
     width: .9375rem;
