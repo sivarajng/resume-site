@@ -51,7 +51,9 @@ app.get('/srish',
 );
 
 app.get('/',
-  routes.index
+  (req, res) => {
+    res.end('ok');
+  }
 );
 
 app.get('/resume',
