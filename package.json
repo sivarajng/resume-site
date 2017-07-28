@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "A Task management portal",
 	"engines": {
-		"node": "6.9.1"
+		"node": "6.11.1"
 	},
 	"main": "index.js",
 	"scripts": {
