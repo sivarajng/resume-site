@@ -1142,25 +1142,14 @@ ul.no-list-style {
 /*SLIDE IN IMAGE*/
 @-webkit-keyframes slide {
     /*100% { left: 0; }*/
-        0%{background-position-x:-200vh}
-    100%{background-position-x:0vh}
+        /*0%{background-position-x:-200vh}
+    100%{background-position-x:0vh}*/
 }
 
 @keyframes slide {
     /*100% { left: 0; }*/
-    0%{background-position-x:-200vh}
-    100%{background-position-x:0vh}
-}
-@-webkit-keyframes zoom {
-    /*100% { left: 0; }*/
-        0%{zoom:1%}
-    100%{zoom:100%}
-}
-
-@keyframes zoom {
-    /*100% { left: 0; }*/
-       0%{zoom:1%}
-    100%{zoom:100%}
+    /*0%{background-position-x:-200vh}
+    100%{background-position-x:0vh}*/
 }
 
 .portrait-img{
@@ -1170,18 +1159,10 @@ ul.no-list-style {
     background-size: cover;
     overflow:hidden;
 
-     -webkit-animation: slide 1s forwards;
-    -webkit-animation-delay: 0s;
-    animation: slide 1s forwards;
-    animation-delay: 0s;
-}
-
-.portrait-content{
-      -webkit-animation: zoom 1s forwards;
-    -webkit-animation-delay: 0s;
-    animation: zoom 1s forwards;
-    animation-delay: 0s;
-
+     -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
 }
 /*SLIDE IN IMAGE*/
 

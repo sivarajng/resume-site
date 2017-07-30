@@ -21,7 +21,7 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                 core_1.Component({
                     selector: 'portrait',
                     templateUrl: './app/templates/portrait.html',
-                    styleUrls: ['./app/styles/portrait.css'],
+                    styleUrls: ['./app/styles/portrait-ang2.css'],
                 })
             ], Portrait);
             exports_1("Portrait", Portrait);
