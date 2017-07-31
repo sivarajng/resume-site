@@ -1142,27 +1142,51 @@ ul.no-list-style {
 /*SLIDE IN IMAGE*/
 @-webkit-keyframes slide {
     /*100% { left: 0; }*/
-        /*0%{background-position-x:-200vh}
-    100%{background-position-x:0vh}*/
+        0%{background-position-x:-200vh}
+    100%{background-position-x:0vh}
 }
 
 @keyframes slide {
     /*100% { left: 0; }*/
-    /*0%{background-position-x:-200vh}
-    100%{background-position-x:0vh}*/
+    0%{background-position-x:-200vh}
+    100%{background-position-x:0vh}
+}
+@-webkit-keyframes zoomtext {
+    /*100% { left: 0; }*/
+        0%{ transform: scale(0);}
+      
+    100%{transform: scale(1);}
 }
 
-.portrait-img{
+@keyframes zoomtext {
+    /*100% { left: 0; }*/
+        0%{ transform: scale(0);}
+      
+    100%{transform: scale(1);}
+}
+
+.portrait-img-animation{
+    background-position-x:0vh;
     background-image: url('/images/bg.png');
 
     background-repeat: no-repeat;
     background-size: cover;
     overflow:hidden;
 
-     -webkit-animation: slide 0.5s forwards;
-    -webkit-animation-delay: 2s;
-    animation: slide 0.5s forwards;
-    animation-delay: 2s;
+     -webkit-animation: slide 1.5s forwards;
+    -webkit-animation-delay: 0s;
+    animation: slide 1.5s forwards;
+    animation-delay: 0s;
+}
+
+.portrait-content{
+      -webkit-animation: zoomtext 1.5s forwards;
+    -webkit-animation-delay: 0s;
+    animation: zoomtext 1.5s forwards;
+    animation-delay: 0s;
+    transform: scale(0);
+    
+
 }
 /*SLIDE IN IMAGE*/
 

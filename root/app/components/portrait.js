@@ -20,8 +20,10 @@ System.register(["@angular/core"], function (exports_1, context_1) {
             Portrait = __decorate([
                 core_1.Component({
                     selector: 'portrait',
+                    // templateUrl: './app/templates/portrait-animation.html',
+                    // styleUrls:['./app/styles/portrait-animation.css'],
                     templateUrl: './app/templates/portrait.html',
-                    styleUrls: ['./app/styles/portrait-ang2.css'],
+                    styleUrls: ['./app/styles/portrait.css'],
                 })
             ], Portrait);
             exports_1("Portrait", Portrait);
