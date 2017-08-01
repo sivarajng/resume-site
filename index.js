@@ -46,11 +46,11 @@ app.get('/login',
   }
 );
 
-app.get('/',
+app.get('/srish',
   routes.index
 );
 
-app.get('/srish',
+app.get('/',
   (req, res) => {
     res.end('ok');
   }
