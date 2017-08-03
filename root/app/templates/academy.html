@@ -1,25 +1,47 @@
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <h1>ACADEMY</h1>
-<md-card>Simple card</md-card>
-<md-card>Simple card</md-card>
-<md-card>Simple card</md-card>
-<md-card>Simple card</md-card>
+<div *ngFor="let item of academy">
 
-<md-card class="example-card">
-  <md-card-header>
-    <div md-card-avatar class="example-header-image"></div>
-    <md-card-title>Shiba Inu</md-card-title>
-    <md-card-subtitle>Dog Breed</md-card-subtitle>
+<md-card class="example-card" style="background-color: rgba(62, 230, 191, 0.2);" >
+  <md-card-header style="    background-color: #0e959a;
+    margin-left: -25px;
+    padding: 10px;
+    margin-right: -25px;
+    margin-top: -25px;" >
+    <md-card-title> <span style="color:white;font-weight: 200"><b>{{item.course}}</b></span></md-card-title>
   </md-card-header>
-  <img md-card-image src="assets/img/examples/shiba2.jpg">
+  <md-card-header style="    background-color: rgba(62, 230, 191, 1);
+    margin-left: -25px;
+    padding: 10px;
+    margin-right: -25px;
+    margin-top: -15px;" >
+    <md-card-title style="margin: 0px;">
+      <span style="font-weight: 200"><b>
+      {{item.institute}}
+     
+      <br/>
+     
+      Year of Pass : <span style="font-size:18px">{{item.year}}</span>
+      </b></span>
+      
+    </md-card-title>
+  </md-card-header>
+  <md-card-header style="    background-color: rgba(62, 230, 10, 1);
+    margin-left: -25px;
+    padding: 10px;
+    margin-right: -25px;
+    margin-top: -15px;" >
+    <md-card-title style="margin: 0px;">
+      <span style="font-weight: 200"><b>
+      {{item.institute}}
+     
+      <br/>
+     
+      Year of Pass : <span style="font-size:18px">{{item.year}}</span>
+      </b></span>
+      
+    </md-card-title>
+  </md-card-header>
+
   <md-card-content>
     <p>
       The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
@@ -27,32 +49,12 @@
       bred for hunting.
     </p>
   </md-card-content>
-  <md-card-actions>
-    <button md-button>LIKE</button>
-    <button md-button>SHARE</button>
-  </md-card-actions>
+  
 </md-card>
-
-<md-card class="example-card">
-  <md-card-header>
-    <div md-card-avatar class="example-header-image"></div>
-    <md-card-title>Shiba Inu</md-card-title>
-    <md-card-subtitle>Dog Breed</md-card-subtitle>
-  </md-card-header>
-  <img md-card-image src="assets/img/examples/shiba2.jpg">
-  <md-card-content>
-    <p>
-      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-      bred for hunting.
-    </p>
-  </md-card-content>
-  <md-card-actions>
-    <button md-button>LIKE</button>
-    <button md-button>SHARE</button>
-  </md-card-actions>
-</md-card>
-
+<br/>
+  </div>
+<br/>
+<br/>
 <md-card class="example-card">
   <md-card-header>
     <div md-card-avatar class="example-header-image"></div>
