@@ -19,7 +19,7 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                 constructor() {
                     this.academy = [
                         {
-                            course: "BE (Electronics and Communication Engineering)",
+                            course: "B.E. (Electronics and Communication Engineering)",
                             institute: "Sona College of Technology, Salem.",
                             year: 2012,
                             score: "87.70 %",

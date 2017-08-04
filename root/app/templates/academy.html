@@ -1,4 +1,4 @@
-<h3>Academic Profile</h3>
+<h4>Academic Profile</h4>
 <div *ngFor="let item of academy">
 
   <md-card class="example-card" style="background-color: rgba(0, 0, 0, 0.1);padding-bottom:10px">
@@ -7,7 +7,9 @@
     padding: 10px;
     margin-right: -25px;
     margin-top: -25px;">
-      <md-card-title> <span style="color:white;font-weight: 200;font-size: 16px"><b>{{item.course}}</b></span></md-card-title>
+      <md-card-title>
+        <span style="color:white;font-weight: 200;font-size: 14px"><b>{{item.course}}</b></span>
+      </md-card-title>
     </md-card-header>
     <md-card-header style="    background-color: rgba(62, 230, 191, 1);
     margin-left: -25px;
@@ -15,7 +17,7 @@
     margin-right: -25px;
     margin-top: -15px;">
       <md-card-title style="margin: 0px;">
-        <span style="font-weight: 200;font-size: 16px;"><b>
+        <span style="font-weight: 200;font-size: 14px;"><b>
       {{item.institute}}
      
       <br/>
@@ -30,20 +32,21 @@
     margin-left: -25px;
     padding: 10px;
     margin-right: -25px;
-    margin-top: -15px;">
+    margin-top: -20px;
+    margin-bottom: -10px;"   >
       <md-card-title style="margin: 0px;">
         <span style="font-weight: 200"><b>
         
       <br/>
      
-      <span style="font-size:16px"> Score :</span> <span style="font-size:25px;color:#0277bd">{{item.score}}</span>
+      <span style="font-size:14px"> Score :</span> <span style="font-size:22px;color:#0277bd">{{item.score}}</span>
         </b>
         </span>
 
       </md-card-title>
     </md-card-header>
 
-  
+
 
   </md-card>
   <br/>

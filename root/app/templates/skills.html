@@ -3,42 +3,38 @@
 
         <div class="container fluid" style="height:100vh">
             <div class="row fluid">
-                <div class="col-md-4" style="padding:2px">
-                    <div class="container fluid">
-                        <md-card style="margin:2px;">Simple card</md-card>
+
+
+                
+                <div *ngFor="let list of skills">
+                    <div class="col-md-4 col-xs-6" style="padding:2px">
+                        <div class="container fluid">
+                            <md-card style="margin:2px;
+                        background-color: rgba(0, 0, 0, 0.1);
+                            border-left-color: #3ee6bf;
+                             border-left-style: solid;
+                             padding-left: 10px;
+    padding-top: 15px;
+                             ">
+
+                             <md-card-header>
+    <img md-card-avatar src="https://source.unsplash.com/random/200x200">
+    <md-card-title> <b>{{list.name}}</b></md-card-title>
+    <md-card-subtitle>{{list.tag}}</md-card-subtitle>
+  </md-card-header>
+
+                            <!--<img src="https://images.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" class="md-card-image" alt="image caption">-->
+                          
+<!--                           
+                             <b>                            
+                                 {{list.name}}</b>-->
+                                 </md-card>
+                        </div>
                     </div>
                 </div>
-               
-                <div class="col-md-4" style="padding:2px">
-                    <div class="container fluid">
-                        <md-card style="margin:2px;">Simple card</md-card>
-                    </div>
-                </div>
-               
-                <div class="col-md-4" style="padding:2px">
-                    <div class="container fluid">
-                        <md-card style="margin:2px;">Simple card</md-card>
-                    </div>
-                </div>
-               
-                <div class="col-md-4" style="padding:2px">
-                    <div class="container fluid">
-                        <md-card style="margin:2px;">Simple card</md-card>
-                    </div>
-                </div>
-               
-                <div class="col-md-4" style="padding:2px">
-                    <div class="container fluid">
-                        <md-card style="margin:2px;">Simple card</md-card>
-                    </div>
-                </div>
-               
-                <div class="col-md-4" style="padding:2px">
-                    <div class="container fluid">
-                        <md-card style="margin:2px;">Simple card</md-card>
-                    </div>
-                </div>
-               
+
+
+
 
             </div>
         </div>
