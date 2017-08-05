@@ -16,11 +16,24 @@ System.register(["@angular/core"], function (exports_1, context_1) {
         ],
         execute: function () {
             Projects = class Projects {
+                constructor() {
+                    this.projects = [
+                        {
+                            title: "B.E. (Electronics and Communication Engineering)",
+                            client: "Sona College of Technology, Salem.",
+                            coreApplications: 2012,
+                            teamSize: "87.70 %",
+                            summary: "8.77/10",
+                            responsibilities: "8.77/10"
+                        },
+                    ];
+                }
             };
             Projects = __decorate([
                 core_1.Component({
                     selector: 'projects',
-                    templateUrl: './app/templates/projects.html'
+                    templateUrl: './app/templates/projects.html',
+                    styleUrls: ['card.css']
                 })
             ], Projects);
             exports_1("Projects", Projects);
