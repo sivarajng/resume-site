@@ -33,18 +33,33 @@
     padding: 10px;
     margin-right: -25px;
     margin-top: -20px;
-    margin-bottom: -10px;"   >
+    margin-bottom: -10px;">
       <md-card-title style="margin: 0px;">
         <span style="font-weight: 200">
         
       <br/>
-     
-      <span style="font-size:14px"> {{item.summary}} </span> 
+     summary
+      <span style="font-size:14px"> 
+                <ul>
+          <li *ngFor="let list1 of item.summary">
+                       <div [innerHTML]="list1">
+</div>
+            </li>
+        </ul>
         
-      <br/>
-     
-      <span style="font-size:14px"> {{item.achievement}} </span> 
-      
+        </span>
+
+
+        <br/> achievement
+        <span style="font-size:14px"> 
+        <ul>
+          <li *ngFor="let list2 of item.achievement">
+            <div [innerHTML]="list2">
+</div>
+
+          </li>
+        </ul>
+        </span>
         </span>
 
       </md-card-title>
