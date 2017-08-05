@@ -16,6 +16,14 @@ System.register(["@angular/core"], function (exports_1, context_1) {
         ],
         execute: function () {
             Home = class Home {
+                ngAfterViewInit() {
+                    $(document).ready(function () {
+                        $('.carousel').carousel({
+                            interval: 3000
+                        });
+                        $('.carousel').carousel('cycle');
+                    });
+                }
             };
             Home = __decorate([
                 core_1.Component({
@@ -29,7 +37,20 @@ li:before {
     content: '\\f111';
     color: #3ee6bf;
     margin:0 5px 0 -15px;
-}`]
+}
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #00a27d !important;
+}
+
+.carousel-indicators li {
+border: 1px solid #00a27d !important;
+  }
+
+
+`]
                 })
             ], Home);
             exports_1("Home", Home);
