@@ -29,20 +29,23 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                         { name: "React JS", tag: "programming", icon: "./images/skills/reactjs.png" },
                         { name: "React-Native", tag: "programming", icon: "./images/skills/reactjs.png" },
                         { name: "Python", tag: "programming", icon: "./images/skills/python.png" },
-                        { name: "Android", tag: "programming", icon: "./images/skills/android.png" },
+                        { name: "jQuery", tag: "programming", icon: "./images/skills/jquery.png" },
                         { name: "Mobility (Native and Cross-Platform)", tag: "programming", icon: "./images/skills/mobile.png" },
                         { name: "JavaScript (ES6)", tag: "programming", icon: "./images/skills/nodejs.png" },
                         { name: "VBScript", tag: "programming", icon: "./images/skills/vb.png" },
                         { name: "Shell Scripting", tag: "programming", icon: "./images/skills/shell.png" },
                         { name: "SQL", tag: "programming", icon: "./images/skills/sql.png" },
-                        { name: "REST", tag: "programming", icon: "./images/skills/rest.png" },
-                        { name: "API Services", tag: "programming", icon: "./images/skills/api.png" },
-                        { name: "HTML5", tag: "programming", icon: "./images/skills/html5.png" },
-                        { name: "CSS", tag: "programming", icon: "./images/skills/css.png" },
-                        { name: "jQuery", tag: "programming", icon: "./images/skills/jquery.png" },
-                        { name: "Bootstrap", tag: "programming", icon: "./images/skills/bootstrap.png" },
+                        { name: "API / REST Services", tag: "programming", icon: "./images/skills/api.png" },
+                        { name: "HTML5", tag: "ui", icon: "./images/skills/html5.png" },
+                        { name: "CSS", tag: "ui", icon: "./images/skills/css.png" },
+                        { name: "Bootstrap", tag: "ui", icon: "./images/skills/bootstrap.png" },
+                        { name: "Angular", tag: "ui", icon: "./images/skills/angularjs.png" },
                         { name: "Express JS ", tag: "server", icon: "./images/skills/nodejs.png" },
                         { name: "Apache Tomcat (J2EE)", tag: "server", icon: "./images/skills/tomcat.png" },
+                        { name: "React-Native", tag: "mobile", icon: "./images/skills/reactjs.png" },
+                        { name: "Cordova", tag: "mobile", icon: "./images/skills/cordova.png" },
+                        { name: "Ionic", tag: "mobile", icon: "./images/skills/ionic.png" },
+                        { name: "Android", tag: "mobile", icon: "./images/skills/android.png" },
                         { name: "Microsoft Azure", tag: "cloud", icon: "./images/skills/azure.png" },
                         { name: "Heroku", tag: "cloud", icon: "./images/skills/heroku.png" },
                         { name: "IBM Bluemix", tag: "cloud", icon: "./images/skills/bluemix.jpg" },
@@ -55,17 +58,17 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                         { name: "Linux/Unix", tag: "os", icon: "./images/skills/linux.png" },
                         { name: "HP-UX", tag: "os", icon: "./images/skills/linux.png" },
                         { name: "Atlassian JIRA", tag: "tool", icon: "./images/skills/jira.png" },
-                        { name: "Visual Studio Team Services", tag: "tool", icon: "./images/skills/visualstudio.png" },
+                        { name: "Visual Studio Team Services", tag: "tool", icon: "./images/skills/vsts.png" },
                         { name: "SVN", tag: "tool", icon: "./images/skills/svn.png" },
                         { name: "Git", tag: "tool", icon: "./images/skills/git.png" },
                         { name: "Bitbucket", tag: "tool", icon: "./images/skills/bitbucket.ico" },
                         { name: "Azure Portal", tag: "tool", icon: "./images/skills/azure.png" },
                         { name: "Directus CMS", tag: "tool", icon: "./images/skills/cms.png" },
-                        { name: "Eclipse", tag: "application", icon: "./images/skills/jira.png" },
+                        { name: "Eclipse", tag: "application", icon: "./images/skills/eclipse2.png" },
                         { name: "Visual Studio", tag: "application", icon: "./images/skills/visualstudio.png" },
-                        { name: "Visual Studio Code", tag: "application", icon: "./images/skills/bitbucket.ico" },
-                        { name: "Android Studio", tag: "application", icon: "./images/skills/svn.png" },
-                        { name: "IntelliJ WebStrom", tag: "application", icon: "./images/skills/git.png" },
+                        { name: "Visual Studio Code", tag: "application", icon: "./images/skills/visualstudio.png" },
+                        { name: "Android Studio", tag: "application", icon: "./images/skills/android.png" },
+                        { name: "IntelliJ WebStrom", tag: "application", icon: "./images/skills/intellij.png" },
                     ];
                     this.tagFilter = 'all';
                     for (var i = 1; i < 21; i++) {
@@ -77,11 +80,14 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                     this.tabs = [
                         { name: "All", active: true },
                         { name: "Programming", active: false },
+                        { name: "Mobile", active: false },
+                        { name: "UI", active: false },
                         { name: "Server", active: false },
                         { name: "Cloud", active: false },
                         { name: "Databases", active: false },
                         { name: "Applications", active: false },
                         { name: "Tools", active: false },
+                        { name: "Operating Systems", active: false },
                     ];
                 }
                 ngAfterViewInit() {
@@ -165,6 +171,15 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                             case 'Tools':
                                 this.tagFilter = 'tool';
                                 break;
+                            case 'UI':
+                                this.tagFilter = 'ui';
+                                break;
+                            case 'Mobile':
+                                this.tagFilter = 'mobile';
+                                break;
+                            case 'Operating Systems':
+                                this.tagFilter = 'os';
+                                break;
                             default:
                                 this.tagFilter = 'all';
                         }
@@ -221,9 +236,10 @@ System.register(["@angular/core"], function (exports_1, context_1) {
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
-  border-bottom-color: red;
+border-bottom-color: #2196F3;
     border-bottom-style: solid;
-        color: #555;
+    border-bottom-width: 5px;
+        color: #2196F3 !important; 
     cursor: default;
     background-color: #fff;
     border: 0px solid #ddd !important; 
@@ -231,8 +247,9 @@ System.register(["@angular/core"], function (exports_1, context_1) {
 }
 
 .bb{
-  border-bottom-color: red; 
+ border-bottom-color: #2196F3;
     border-bottom-style: solid;
+    border-bottom-width: 5px; 
 }
 
 .scroller {

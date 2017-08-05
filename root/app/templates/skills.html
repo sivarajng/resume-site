@@ -1,10 +1,10 @@
   <div class="container fluid">
-      <div class="scroller scroller-left">AAAAAA</div>
-      <div class="scroller scroller-right">BBBBBBB</div>
+      <div class="scroller scroller-left"><i class="icon-chevron-left icon-2x" style="color:#2196F3"></i></div>
+      <div class="scroller scroller-right"><i class="icon-chevron-right icon-2x" style="color:#2196F3"></i></div>
       <div class="wrapper">
         <ul class="nav nav-tabs list" id="myTab">
           <li (click)="aaa(tab)" *ngFor="let tab of tabs" class="{{tab.active ? 'active bb' : ''}}" [style]="getStyle(tab)">
-            <a >{{tab.name}}</a>
+            <a ><b>{{tab.name}}</b></a>
             <!--<button type="button" class="btn btn-danger btn-xs" (click)="test(query)"><span class="glyphicon glyphicon-remove"></span></button>-->
           </li>
       </ul>
