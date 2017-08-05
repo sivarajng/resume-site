@@ -5,7 +5,6 @@
         <ul class="nav nav-tabs list" id="myTab">
           <li (click)="aaa(tab)" *ngFor="let tab of tabs" class="{{tab.active ? 'active bb' : ''}}" [style]="getStyle(tab)">
             <a ><b>{{tab.name}}</b></a>
-            <!--<button type="button" class="btn btn-danger btn-xs" (click)="test(query)"><span class="glyphicon glyphicon-remove"></span></button>-->
           </li>
       </ul>
       </div>

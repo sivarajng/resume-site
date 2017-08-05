@@ -40,6 +40,7 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                         { name: "CSS", tag: "ui", icon: "./images/skills/css.png" },
                         { name: "Bootstrap", tag: "ui", icon: "./images/skills/bootstrap.png" },
                         { name: "Angular", tag: "ui", icon: "./images/skills/angularjs.png" },
+                        { name: "React", tag: "ui", icon: "./images/skills/reactjs.png" },
                         { name: "Express JS ", tag: "server", icon: "./images/skills/nodejs.png" },
                         { name: "Apache Tomcat (J2EE)", tag: "server", icon: "./images/skills/tomcat.png" },
                         { name: "React-Native", tag: "mobile", icon: "./images/skills/reactjs.png" },

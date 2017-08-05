@@ -65,6 +65,7 @@ export function startupServiceFactory(startupService: StartupService): Function 
 }
 
 import { SkillFilter } from './components/skillFilter';
+import { CertificationFilter } from './components/certificationFilter';
 
 import 'hammerjs';
 // import $ from 'jquery';
@@ -134,6 +135,7 @@ export class AppMaterialModule { }
     , Academy
     , Projects
      ,SkillFilter
+     ,CertificationFilter
   ],
   bootstrap: [
     App

@@ -1,25 +1,29 @@
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<h1>CERTIF</h1>
-<md-tab-group>
-    <md-tab label="Tab 1">Content 1
-        <md-card>Simple card</md-card>
-        <md-card>Simple card</md-card>
-        <md-card>Simple card</md-card>
+  <div class="container fluid">
+      <div class="scroller scroller-left"><i class="icon-chevron-left icon-2x" style="color:#2196F3"></i></div>
+      <div class="scroller scroller-right"><i class="icon-chevron-right icon-2x" style="color:#2196F3"></i></div>
+      <div class="wrapper">
+        <ul class="nav nav-tabs list" id="myTab">
+          <li (click)="aaa(tab)" *ngFor="let tab of tabs" class="{{tab.active ? 'active bb' : ''}}" [style]="getStyle(tab)">
+            <a ><b>{{tab.name}}</b></a>
+          </li>
+      </ul>
+      </div>
+    </div>
 
-
-    </md-tab>
-    <md-tab label="Tab 2">Content 2
-        <md-card>Simple card</md-card>
-        <md-card>Simple card</md-card>
-        <md-card>Simple card</md-card>
-    </md-tab>
-
-</md-tab-group>
+      <div class="container fluid" style="height:100vh">
+            <div class="row fluid">
+                <!--===============CARD================-->
+                <div *ngFor="let list of (certifications | certificationFilter:tagFilter)">
+                    <div class="col-md-6 col-xs-6" style="padding:2px">
+                        <div class="container fluid">
+                            <md-card style="margin:2px;background-color: rgba(0, 0, 0, 0.1);border-left-color: #3ee6bf;border-left-style: solid;                             padding: 10px;">
+                                <md-card-header>
+                                    <img md-card-avatar src={{list.icon}}>
+                                    <md-card-title style="    height: 28px;word-wrap: break-word;"> <b>{{list.name}}</b></md-card-title>
+                                </md-card-header>
+                            </md-card>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
