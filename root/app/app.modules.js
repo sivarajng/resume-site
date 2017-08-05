@@ -1,4 +1,4 @@
-System.register(["@angular/core", "@angular/platform-browser", "@angular/platform-browser/animations", "@angular/forms", "@angular/material", "@angular/cdk", "./components/index", "./routes/routes", "./services/index", "@angular/http", "./startup", "hammerjs"], function (exports_1, context_1) {
+System.register(["@angular/core", "@angular/platform-browser", "@angular/platform-browser/animations", "@angular/forms", "@angular/material", "@angular/cdk", "./components/index", "./routes/routes", "./services/index", "@angular/http", "./startup", "./components/skillFilter", "hammerjs"], function (exports_1, context_1) {
     "use strict";
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -11,7 +11,7 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/platfor
         return () => startupService.load();
     }
     exports_1("startupServiceFactory", startupServiceFactory);
-    var core_1, platform_browser_1, animations_1, forms_1, material_1, cdk_1, index_1, routes_1, index_2, http_1, startup_1, AppMaterialModule, AppModule;
+    var core_1, platform_browser_1, animations_1, forms_1, material_1, cdk_1, index_1, routes_1, index_2, http_1, startup_1, skillFilter_1, AppMaterialModule, AppModule;
     return {
         setters: [
             function (core_1_1) {
@@ -46,6 +46,9 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/platfor
             },
             function (startup_1_1) {
                 startup_1 = startup_1_1;
+            },
+            function (skillFilter_1_1) {
+                skillFilter_1 = skillFilter_1_1;
             },
             function (_1) {
             }
@@ -115,7 +118,8 @@ System.register(["@angular/core", "@angular/platform-browser", "@angular/platfor
                         index_1.Certifications,
                         index_1.Experience,
                         index_1.Academy,
-                        index_1.Projects
+                        index_1.Projects,
+                        skillFilter_1.SkillFilter
                     ],
                     bootstrap: [
                         index_1.App

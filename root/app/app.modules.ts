@@ -64,7 +64,7 @@ export function startupServiceFactory(startupService: StartupService): Function 
   return () => startupService.load();
 }
 
-
+import { SkillFilter } from './components/skillFilter';
 
 import 'hammerjs';
 // import $ from 'jquery';
@@ -106,6 +106,7 @@ declare var $: any;
     MdTabsModule,
     MdToolbarModule,
     MdTooltipModule,
+   
   ]
 })
 export class AppMaterialModule { }
@@ -119,6 +120,7 @@ export class AppMaterialModule { }
     , AppMaterialModule
     , HttpModule
     , appRoutes
+    
   ],
   declarations: [
     App
@@ -131,6 +133,7 @@ export class AppMaterialModule { }
     , Experience
     , Academy
     , Projects
+     ,SkillFilter
   ],
   bootstrap: [
     App

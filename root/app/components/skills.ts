@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'skills',
   templateUrl: './app/templates/skills.html',
@@ -73,8 +74,10 @@ import { Component } from '@angular/core';
 })
 
 export class Skills {
-    tabs: any[] = [];
+  tabs: any[] = [];
+  tagFilter: any = "";
   constructor() {
+    this.tagFilter = 'all';
     for (var i = 1; i < 21; i++) {
       this.tabs.push({
         name: "Tab" + i,
@@ -164,10 +167,43 @@ export class Skills {
       if (this.tabs[i].name == tab.name) {
         this.tabs[i].active = true;
       }
-      else{
-          this.tabs[i].active = false;
-        
-        
+      else {
+        this.tabs[i].active = false;
+      }
+
+      switch(tab.name){
+
+        case 'All':
+        this.tagFilter='all';
+        break;
+
+        case 'Programming':
+        this.tagFilter='programming';
+        break;
+
+        case 'Server':
+        this.tagFilter='server';
+        break;
+
+        case 'Cloud':
+        this.tagFilter='cloud';
+        break;
+
+        case 'Databases':
+        this.tagFilter='database';
+        break;
+
+        case 'Applications':
+        this.tagFilter='application';
+        break;
+
+        case 'Tools':
+        this.tagFilter='tool';
+        break;
+
+        default:
+        this.tagFilter='all';
+
       }
     }
   }
@@ -179,64 +215,64 @@ export class Skills {
       if (this.tabs[i].name == tab.name) {
         return "border-bottom-color: #ff00ff;border-bottom-style: solid;"
       }
-      else{
-         return "border-bottom-color: red;border-bottom-style: solid;"
-       
+      else {
+        return "border-bottom-color: red;border-bottom-style: solid;"
+
       }
     }
   }
   skills = [
-    { name: "Node JS", tag: "language", icon: "./images/skills/nodejs.png" },
-    { name: "Angular JS ( 1 & 2 )", tag: "language", icon: "./images/skills/angularjs.png" },
-    { name: "Core Java", tag: "language", icon: "./images/skills/java.png" },
-    { name: "React JS", tag: "language", icon: "./images/skills/reactjs.png" },
-    { name: "React-Native", tag: "language", icon: "./images/skills/reactjs.png" },
-    { name: "Python", tag: "language", icon: "./images/skills/python.png" },
-    { name: "Android", tag: "language", icon: "./images/skills/android.png" },
-    { name: "Mobility (Native and Cross-Platform)", tag: "language", icon: "./images/skills/mobile.png" },
-    { name: "JavaScript (ES6)", tag: "language", icon: "./images/skills/nodejs.png" },
-    { name: "VBScript", tag: "language", icon: "./images/skills/vb.png" },
-    { name: "Shell Scripting", tag: "language", icon: "./images/skills/shell.png" },
-    { name: "SQL", tag: "language", icon: "./images/skills/sql.png" },
-    { name: "REST", tag: "language", icon: "./images/skills/rest.png" },
-    { name: "API Services", tag: "language", icon: "./images/skills/api.png" },
-    { name: "HTML5", tag: "language", icon: "./images/skills/html5.png" },
-    { name: "CSS", tag: "language", icon: "./images/skills/css.png" },
-    { name: "jQuery", tag: "language", icon: "./images/skills/jquery.png" },
-    { name: "Bootstrap", tag: "language", icon: "./images/skills/bootstrap.png" },
+    { name: "Node JS", tag: "programming", icon: "./images/skills/nodejs.png" },
+    { name: "Angular JS ( 1 & 2 )", tag: "programming", icon: "./images/skills/angularjs.png" },
+    { name: "Core Java", tag: "programming", icon: "./images/skills/java.png" },
+    { name: "React JS", tag: "programming", icon: "./images/skills/reactjs.png" },
+    { name: "React-Native", tag: "programming", icon: "./images/skills/reactjs.png" },
+    { name: "Python", tag: "programming", icon: "./images/skills/python.png" },
+    { name: "Android", tag: "programming", icon: "./images/skills/android.png" },
+    { name: "Mobility (Native and Cross-Platform)", tag: "programming", icon: "./images/skills/mobile.png" },
+    { name: "JavaScript (ES6)", tag: "programming", icon: "./images/skills/nodejs.png" },
+    { name: "VBScript", tag: "programming", icon: "./images/skills/vb.png" },
+    { name: "Shell Scripting", tag: "programming", icon: "./images/skills/shell.png" },
+    { name: "SQL", tag: "programming", icon: "./images/skills/sql.png" },
+    { name: "REST", tag: "programming", icon: "./images/skills/rest.png" },
+    { name: "API Services", tag: "programming", icon: "./images/skills/api.png" },
+    { name: "HTML5", tag: "programming", icon: "./images/skills/html5.png" },
+    { name: "CSS", tag: "programming", icon: "./images/skills/css.png" },
+    { name: "jQuery", tag: "programming", icon: "./images/skills/jquery.png" },
+    { name: "Bootstrap", tag: "programming", icon: "./images/skills/bootstrap.png" },
 
-    { name: "Express JS ", tag: "language", icon: "./images/skills/nodejs.png" },
-    { name: "Apache Tomcat (J2EE)", tag: "language", icon: "./images/skills/tomcat.png" },
-
-
-    { name: "Microsoft Azure", tag: "language", icon: "./images/skills/azure.png" },
-    { name: "Heroku", tag: "language", icon: "./images/skills/heroku.png" },
-    { name: "IBM Bluemix", tag: "language", icon: "./images/skills/bluemix.jpg" },
-    { name: "Google FireBase", tag: "language", icon: "./images/skills/firebase2.png" },
-    { name: "AWS (Beginner)", tag: "language", icon: "./images/skills/aws.png" },
+    { name: "Express JS ", tag: "server", icon: "./images/skills/nodejs.png" },
+    { name: "Apache Tomcat (J2EE)", tag: "server", icon: "./images/skills/tomcat.png" },
 
 
-    { name: "MongoDB", tag: "language", icon: "./images/skills/mongodb.png" },
-    { name: "PostgreSQL", tag: "language", icon: "./images/skills/postgresql.png" },
-    { name: "Microsoft SQL Server", tag: "language", icon: "./images/skills/mssql.png" },
+    { name: "Microsoft Azure", tag: "cloud", icon: "./images/skills/azure.png" },
+    { name: "Heroku", tag: "cloud", icon: "./images/skills/heroku.png" },
+    { name: "IBM Bluemix", tag: "cloud", icon: "./images/skills/bluemix.jpg" },
+    { name: "Google FireBase", tag: "cloud", icon: "./images/skills/firebase2.png" },
+    { name: "AWS (Beginner)", tag: "cloud", icon: "./images/skills/aws.png" },
 
-    { name: "Windows", tag: "language", icon: "./images/skills/windows.png" },
-    { name: "Linux/Unix", tag: "language", icon: "./images/skills/linux.png" },
-    { name: "HP-UX", tag: "language", icon: "./images/skills/linux.png" },
 
-    { name: "Atlassian JIRA", tag: "language", icon: "./images/skills/jira.png" },
-    { name: "Visual Studio Team Services", tag: "language", icon: "./images/skills/visualstudio.png" },
-    { name: "SVN", tag: "language", icon: "./images/skills/svn.png" },
-    { name: "Git", tag: "language", icon: "./images/skills/git.png" },
-    { name: "Bitbucket", tag: "language", icon: "./images/skills/bitbucket.ico" },
-    { name: "Azure Portal", tag: "language", icon: "./images/skills/azure.png" },
-    { name: "Directus CMS", tag: "language", icon: "./images/skills/cms.png" },
+    { name: "MongoDB", tag: "database", icon: "./images/skills/mongodb.png" },
+    { name: "PostgreSQL", tag: "database", icon: "./images/skills/postgresql.png" },
+    { name: "Microsoft SQL Server", tag: "database", icon: "./images/skills/mssql.png" },
 
-    { name: "Eclipse", tag: "language", icon: "./images/skills/jira.png" },
-    { name: "Visual Studio", tag: "language", icon: "./images/skills/visualstudio.png" },
-    { name: "Visual Studio Code", tag: "language", icon: "./images/skills/bitbucket.ico" },
-    { name: "Android Studio", tag: "language", icon: "./images/skills/svn.png" },
-    { name: "IntelliJ WebStrom", tag: "language", icon: "./images/skills/git.png" },
+    { name: "Windows", tag: "os", icon: "./images/skills/windows.png" },
+    { name: "Linux/Unix", tag: "os", icon: "./images/skills/linux.png" },
+    { name: "HP-UX", tag: "os", icon: "./images/skills/linux.png" },
+
+    { name: "Atlassian JIRA", tag: "tool", icon: "./images/skills/jira.png" },
+    { name: "Visual Studio Team Services", tag: "tool", icon: "./images/skills/visualstudio.png" },
+    { name: "SVN", tag: "tool", icon: "./images/skills/svn.png" },
+    { name: "Git", tag: "tool", icon: "./images/skills/git.png" },
+    { name: "Bitbucket", tag: "tool", icon: "./images/skills/bitbucket.ico" },
+    { name: "Azure Portal", tag: "tool", icon: "./images/skills/azure.png" },
+    { name: "Directus CMS", tag: "tool", icon: "./images/skills/cms.png" },
+
+    { name: "Eclipse", tag: "application", icon: "./images/skills/jira.png" },
+    { name: "Visual Studio", tag: "application", icon: "./images/skills/visualstudio.png" },
+    { name: "Visual Studio Code", tag: "application", icon: "./images/skills/bitbucket.ico" },
+    { name: "Android Studio", tag: "application", icon: "./images/skills/svn.png" },
+    { name: "IntelliJ WebStrom", tag: "application", icon: "./images/skills/git.png" },
 
 
 

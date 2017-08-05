@@ -1,4 +1,4 @@
-  <div class="container">
+  <div class="container fluid">
       <div class="scroller scroller-left">AAAAAA</div>
       <div class="scroller scroller-right">BBBBBBB</div>
       <div class="wrapper">
@@ -10,3 +10,21 @@
       </ul>
       </div>
     </div>
+
+      <div class="container fluid" style="height:100vh">
+            <div class="row fluid">
+                <!--===============CARD================-->
+                <div *ngFor="let list of (skills | skillFilter:tagFilter)">
+                    <div class="col-md-4 col-xs-6" style="padding:2px">
+                        <div class="container fluid">
+                            <md-card style="margin:2px;background-color: rgba(0, 0, 0, 0.1);border-left-color: #3ee6bf;border-left-style: solid;                             padding: 10px;">
+                                <md-card-header>
+                                    <img md-card-avatar src={{list.icon}}>
+                                    <md-card-title style="    height: 28px;word-wrap: break-word;"> <b>{{list.name}}</b></md-card-title>
+                                </md-card-header>
+                            </md-card>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
