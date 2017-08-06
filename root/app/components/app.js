@@ -24,13 +24,57 @@ System.register(["@angular/core", "../services/globalData"], function (exports_1
             App = class App {
                 constructor(globalData) {
                     this.globalData = globalData;
+                    this.showToggle = false;
+                    this.social = [
+                        { name: 'Facebook', color: 'primary', url: "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsivaraj-nagaraj.herokuapp.com" },
+                        { name: 'Twitter', color: 'yellow', url: "https://twitter.com/intent/tweet?url=http%3A%2F%2Fsivaraj-nagaraj.herokuapp.com&text=Sivaraj%20Nagaraj%20-%20Software%20Engineer" },
+                        { name: 'Google+', color: 'warn', url: "https://plus.google.com/share?url=http%3A%2F%2Fsivaraj-nagaraj.herokuapp.com" },
+                        { name: 'LinkedIn', color: '#ffff00', url: "http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fsivaraj-nagaraj.herokuapp.com&title=Sivaraj%20Nagaraj%20-%20Software%20Engineer" }
+                    ];
                     console.log('globalData ', this.globalData.getResumeData());
+                }
+                toggleChip() {
+                    this.showToggle = !this.showToggle;
+                }
+                shareChip(name) {
+                    alert(name);
                 }
             };
             App = __decorate([
                 core_1.Component({
                     selector: 'app',
-                    templateUrl: './app/templates/app.html'
+                    templateUrl: './app/templates/app.html',
+                    styles: [`
+  
+  .example-container {
+  position: absolute;
+right: 20px;
+    bottom: 20px;
+}
+  
+  .example-container-chip {
+  position: absolute;
+right: 20px;
+    bottom: 80px;
+}
+
+.example-button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.example-button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mat-fab.mat-accent, .mat-mini-fab.mat-accent, .mat-raised-button.mat-accent {
+    background-color: #ff0000;
+}
+  
+  `]
                 }),
                 __metadata("design:paramtypes", [globalData_1.GlobalData])
             ], App);

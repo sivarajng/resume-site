@@ -2,5 +2,28 @@
         <div class="row">
                 <portrait></portrait>
                 <resume></resume>
+
+                <div class="example-container">
+                        <div class="button-row">
+                                <button (click)="toggleChip()" md-mini-fab><md-icon>share</md-icon></button>
+                        </div>
+
+                </div>
+
+                <div *ngIf="showToggle" class="example-container-chip">
+                        <div class="button-row">
+                                <div *ngFor="let list of social">
+                                        <a md-raised-button href={{list.url}} target="_blank" style="background-color: #ff00ff;
+                                        padding:2px;    margin: 2px;
+    border-radius: 50px;" > {{list.name}}</a>
+                                </div>
+                                  
+
+
+                        </div>
+                </div>
+
+
+
         </div>
 </div>
