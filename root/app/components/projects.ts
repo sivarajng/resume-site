@@ -24,28 +24,104 @@ export class Projects {
 
   projects = [
     {
-      name: "Senior Engineer",
-      client: "Brillio",
-      coreApplications: "Bengaluru",
-      teamSize: "Mar-2017",
-      from: "Mar-2017",
-      to: "Present",
+      name: "Cloud Server and Mobile App for digitizing Dealer activities",
+      client: "Leading Car Manufacturer ",
+      coreApplications: ["NodeJS, AngularJS, MongoDB, Microsoft Azure, socket.io, Android, iOS, JIRA, SVN"],
+      teamSize: 8,
+      from: "from",
+      to: "to",
       summary: [
-        "Working as a MEAN Stack (Node, Angular, MongoDB, Express) Developer by designing and developing both Frontend and Backend modules as well as developing API Services."
-        , "Managing a team of four peoples and experienced in deploying Cloud Solutions like Microsoft Azure, Heroku and IBM Bluemix."
-        , "Also working in compliance with Agile Methodologies through JIRA and Visual Studio Team Services."
-        , "Strong programming Skills in NodeJS (ECMA2016 / ES6 Standard), Core Java, Mobility, Web technologies and Scripting Languages."
-        , "Worked on Hybrid Mobile App Developments (Android / iOS) by leveraging high end frameworks like Ionic and React-Native."
+        "Project is on designing and developing a Backend Server (on Azure Cloud) for Hybrid Mobile App targeted for Android and iOS devices. The Server enables multiple functionalities that makes the Frontend Mobile Apps to execute various functionalities for the Car dealer’s and made the activities easy for a Leading Car Manufacturer. My role involves designing and developing the Server logics, API services, Chat module by leveraging the socket.io as well as."
+
       ],
       roles: [
-        "<b>Awarded with “Team Excellence“</b> for Jun’17– a recognition for the Teams that shown high level of performance and quality delivery."
-        , "<b>Developed an in-house prototype for Task Tracker portal</b> through cutting edge technologies which has both Server and Client side apps."
+        "Managing requirement gathering, system analysis and finalization of technical / functional specification based on Business Logic and Operations."
+        , "	Managing a group of peoples and allocating tasks through JIRA."
+        , "	Work on the design and development of the Server Logics and integrate with the Frontend functionalities."
+        , "	Coordinating with Clients regularly on Status and taking care of new requirements, providing active resolutions on the challenges raised."
+
       ]
     },
+    {
+      name: "Community based E-Commerece platform (Mobile App and API Services) ",
+      client: "Leading Pop Culture Toy Producer",
+      coreApplications: ["React-Native, ReactJS, NodeJS, Microsoft Azure, Android, iOS, JIRA, Git, Directus CMS, Google FireBase"],
+      teamSize: 6,
+      from: "from",
+      to: "to",
+      summary: [
+        "The project is on designing and developing a Mobile First App using a very recent technology 'React-Native' and ReactJS as well as developing API services that will be consumed by the Mobile App. The App enables a digital platform for the client and creates a new community based eco-system which also incorporates e-commerce and payment gateways. "
 
-   
+      ],
+      roles: [
+        "Managing requirement gathering, system analysis and finalization of technical / functional specification based on Business Logic and Operations."
+        , "Managing a couple of peoples."
+        , "Work on the design and development of the Mobile Application from prototype to development, testing, implementation and Go Live."
+        , "Coordinating with Clients regularly on Status and taking care of new requirements, providing active resolutions on the challenges raised."
 
+      ]
+    },
+    {
+      name: "name",
+      client: "client",
+      coreApplications: ["coreApplications"],
+      teamSize: 1,
+      from: "from",
+      to: "to",
+      summary: [
+        "summary"
 
+      ],
+      roles: [
+        "roles"
+      ]
+    },
+    {
+      name: "name",
+      client: "client",
+      coreApplications: ["coreApplications"],
+      teamSize: 1,
+      from: "from",
+      to: "to",
+      summary: [
+        "summary"
 
+      ],
+      roles: [
+        "roles"
+      ]
+    },
+    {
+      name: "name",
+      client: "client",
+      coreApplications: ["coreApplications"],
+      teamSize: 1,
+      from: "from",
+      to: "to",
+      summary: [
+        "summary"
+
+      ],
+      roles: [
+        "roles"
+      ]
+    },
   ]
+  // projects = [
+  //   {
+  //     name: "name",
+  //     client: "client",
+  //     coreApplications: ["coreApplications"],
+  //     teamSize: 1,
+  //     from: "from",
+  //     to: "to",
+  //     summary: [
+  //       "summary"
+
+  //     ],
+  //     roles: [
+  //      "roles"
+  //     ]
+  //   },
+  // ]
 }
