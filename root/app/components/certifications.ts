@@ -216,15 +216,13 @@ export class Certifications {
     
     
     
-    { name: "Node JS", tag: "lynda", icon: "./images/skills/lynda.png" },
-    { name: "Node JS", tag: "lynda", icon: "./images/skills/lynda.png" },
-    { name: "Node JS", tag: "lynda", icon: "./images/skills/lynda.png" },
+    { name: "in update", tag: "lynda", icon: "./images/skills/lynda.png" },
+
     
     
     
-    { name: "Node JS", tag: "pluralsight", icon: "./images/skills/ps.ico" },
-    { name: "Node JS", tag: "pluralsight", icon: "./images/skills/ps.ico" },
-    { name: "Node JS", tag: "pluralsight", icon: "./images/skills/ps.ico" },
+    { name: "in update", tag: "pluralsight", icon: "./images/skills/ps.ico" },
+
    
 
 

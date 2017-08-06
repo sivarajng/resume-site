@@ -26,12 +26,8 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                         { name: "IBM Cloud Platform Application Development V1 (Bluemix)", tag: "ibm", icon: "./images/skills/ibm.png" },
                         { name: "IBM Rational Associate Application Developer V8", tag: "ibm", icon: "./images/skills/ibm.png" },
                         { name: "IBM DB2 9 Fundamentals Certification", tag: "ibm", icon: "./images/skills/ibm.png" },
-                        { name: "Node JS", tag: "lynda", icon: "./images/skills/lynda.png" },
-                        { name: "Node JS", tag: "lynda", icon: "./images/skills/lynda.png" },
-                        { name: "Node JS", tag: "lynda", icon: "./images/skills/lynda.png" },
-                        { name: "Node JS", tag: "pluralsight", icon: "./images/skills/ps.ico" },
-                        { name: "Node JS", tag: "pluralsight", icon: "./images/skills/ps.ico" },
-                        { name: "Node JS", tag: "pluralsight", icon: "./images/skills/ps.ico" },
+                        { name: "in update", tag: "lynda", icon: "./images/skills/lynda.png" },
+                        { name: "in update", tag: "pluralsight", icon: "./images/skills/ps.ico" },
                     ];
                     this.tagFilter = 'all';
                     for (var i = 1; i < 21; i++) {
