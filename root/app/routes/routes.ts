@@ -15,7 +15,7 @@ import {
 } from '../components/index';
 
 const router: Routes = [
-    { path: '', redirectTo: 'skills', pathMatch: 'full' },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: Home },
     { path: 'skills', component: Skills },
     { path: 'certifications', component: Certifications },

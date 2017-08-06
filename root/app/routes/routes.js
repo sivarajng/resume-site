@@ -13,7 +13,7 @@ System.register(["@angular/router", "../components/index"], function (exports_1,
         ],
         execute: function () {
             router = [
-                { path: '', redirectTo: 'skills', pathMatch: 'full' },
+                { path: '', redirectTo: 'home', pathMatch: 'full' },
                 { path: 'home', component: index_1.Home },
                 { path: 'skills', component: index_1.Skills },
                 { path: 'certifications', component: index_1.Certifications },
