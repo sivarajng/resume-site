@@ -1,4 +1,5 @@
-<h4>Academic Profile</h4>
+<h4>Projects</h4>
+
 <div *ngFor="let item of projects">
 
   <md-card class="example-card" style="background-color: rgba(0, 0, 0, 0.1);padding-bottom:10px">
@@ -8,7 +9,7 @@
     margin-right: -25px;
     margin-top: -25px;">
       <md-card-title>
-        <span style="color:white;font-weight: 200;font-size: 14px"><b>{{item.course}}</b></span>
+        <span style="color:white;font-weight: 200;font-size: 16px"><b>{{item.name}}</b></span>
       </md-card-title>
     </md-card-header>
     <md-card-header style="    background-color: rgba(62, 230, 191, 1);
@@ -17,14 +18,19 @@
     margin-right: -25px;
     margin-top: -15px;">
       <md-card-title style="margin: 0px;">
-        <span style="font-weight: 200;font-size: 14px;"><b>
-      {{item.institute}}
-     
-      <br/>
-     
-     <span style="font-size:14px"> Year of Pass :</span> <span style="font-size:16px">{{item.year}}</span>
-        </b>
-        </span>
+        <table>
+          <tr>
+            <td>        <span style="font-weight: 200;font-size: 14px;float:left">
+            <b>Client :<br/></b></span>
+            </td>
+             <td>        <span style="font-weight: 200;font-size: 14px;float:right;color:#0D47A1">
+          <b>{{item.client}}</b></span>
+            </td>
+          </tr>
+        </table>
+
+
+
 
       </md-card-title>
     </md-card-header>
@@ -33,14 +39,39 @@
     padding: 10px;
     margin-right: -25px;
     margin-top: -20px;
-    margin-bottom: -10px;"   >
+    margin-bottom: -10px;">
       <md-card-title style="margin: 0px;">
-        <span style="font-weight: 200"><b>
+        <span style="font-weight: 200">
         
       <br/>
-     
-      <span style="font-size:14px"> Score :</span> <span style="font-size:22px;color:#0277bd">{{item.score}}</span>
-        </b>
+      <span style="font-weight: 200;font-size: 14px;float:left;color:#0D47A1">
+             <b>  Project Summary</b>
+               </span>
+               <br/>  
+      <span style="font-size:14px"> 
+                <ul>
+          <li *ngFor="let list1 of item.summary">
+                       <div [innerHTML]="list1">
+</div>
+            </li>
+        </ul>
+        
+        </span>
+
+
+         <span style="font-weight: 200;font-size: 14px;float:left;color:#0D47A1">
+             <b>  My Roles & Responsibilities</b>
+               </span>
+               <br/>  
+        <span style="font-size:14px"> 
+        <ul>
+          <li *ngFor="let list2 of item.roles">
+            <div [innerHTML]="list2">
+</div>
+
+          </li>
+        </ul>
+        </span>
         </span>
 
       </md-card-title>
