@@ -54,10 +54,11 @@ toggleChip(){
 this.showToggle = !this.showToggle;
 }
  social = [
-    { name: 'Facebook', color: 'primary' ,url:"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsivaraj-nagaraj.herokuapp.com"},
-    { name: 'Twitter', color: 'yellow' ,url:"https://twitter.com/intent/tweet?url=http%3A%2F%2Fsivaraj-nagaraj.herokuapp.com&text=Sivaraj%20Nagaraj%20-%20Software%20Engineer"},
-    { name: 'Google+', color: 'warn' ,url:"https://plus.google.com/share?url=http%3A%2F%2Fsivaraj-nagaraj.herokuapp.com"},
-    { name: 'LinkedIn', color: '#ffff00' ,url:"http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fsivaraj-nagaraj.herokuapp.com&title=Sivaraj%20Nagaraj%20-%20Software%20Engineer"}
+    { name: 'Email', color: 'primary' ,url:"mailto:?Subject=Cool%20profile%20of%20Sivaraj%20Nagaraj%2C%20check%20it%20out.&Body=Hey%2C%0A%0AI%20came%20across%20a%20cool%20profile%20of%20Sivaraj%20Nagaraj%2C%20check%20it%20out.%0Ahttp%3A//sivaraj-nagaraj.herokuapp.com"},
+    { name: 'Facebook', color: 'primary' ,url:"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsivaraj-nagaraj.herokuapp.com%2F"},
+    { name: 'Google+', color: 'warn' ,url:"https://plus.google.com/share?url=http%3A%2F%2Fsivaraj-nagaraj.herokuapp.com%2F"},
+    { name: 'LinkedIn', color: '#ffff00' ,url:"http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fsivaraj-nagaraj.herokuapp.com%2F&title=Hey%2C%20I%20came%20across%20a%20cool%20profile%20of%20Sivaraj%20Nagaraj%2C%20check%20it%20out."},
+    { name: 'Twitter', color: 'yellow' ,url:"https://twitter.com/intent/tweet?url=http%3A%2F%2Fsivaraj-nagaraj.herokuapp.com%2F&text=Hey%2C%20I%20came%20across%20a%20cool%20profile%20of%20Sivaraj%20Nagaraj%2C%20check%20it%20out."},
 
   ];
 
