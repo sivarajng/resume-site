@@ -27,6 +27,7 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                         { name: "Angular JS ( 1 & 2 )", tag: "programming", icon: "./images/skills/angularjs.png" },
                         { name: "Core Java", tag: "programming", icon: "./images/skills/java.png" },
                         { name: "React JS", tag: "programming", icon: "./images/skills/reactjs.png" },
+			{ name: "Redux", tag: "programming", icon: "./images/skills/reactjs.png" },
                         { name: "React-Native", tag: "programming", icon: "./images/skills/reactjs.png" },
                         { name: "Python", tag: "programming", icon: "./images/skills/python.png" },
                         { name: "jQuery", tag: "programming", icon: "./images/skills/jquery.png" },
