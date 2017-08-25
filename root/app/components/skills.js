@@ -52,7 +52,7 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                         { name: "Heroku", tag: "cloud", icon: "./images/skills/heroku.png" },
                         { name: "IBM Bluemix", tag: "cloud", icon: "./images/skills/bluemix.jpg" },
                         { name: "Google FireBase", tag: "cloud", icon: "./images/skills/firebase2.png" },
-                        { name: "AWS (Beginner)", tag: "cloud", icon: "./images/skills/aws.png" },
+                        { name: "AWS", tag: "cloud", icon: "./images/skills/aws.png" },
                         { name: "MongoDB", tag: "database", icon: "./images/skills/mongodb.png" },
                         { name: "PostgreSQL", tag: "database", icon: "./images/skills/postgresql.png" },
                         { name: "Microsoft SQL Server", tag: "database", icon: "./images/skills/mssql.png" },
