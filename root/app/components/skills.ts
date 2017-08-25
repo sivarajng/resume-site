@@ -273,7 +273,7 @@ export class Skills {
     { name: "Heroku", tag: "cloud", icon: "./images/skills/heroku.png" },
     { name: "IBM Bluemix", tag: "cloud", icon: "./images/skills/bluemix.jpg" },
     { name: "Google FireBase", tag: "cloud", icon: "./images/skills/firebase2.png" },
-    { name: "AWS (Beginner)", tag: "cloud", icon: "./images/skills/aws.png" },
+    { name: "AWS", tag: "cloud", icon: "./images/skills/aws.png" },
 
 
     { name: "MongoDB", tag: "database", icon: "./images/skills/mongodb.png" },
