@@ -19,11 +19,28 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                 constructor() {
                     this.experiences = [
                         {
+                            designation: "Software Development Engineer",
+                            company: "Hike Messenger",
+                            location: "Bengaluru",
+                            from: "Dec-2017",
+                            to: "Present",
+                            summary: [
+                                "Working as an Mobile App (React Native) and Backend (Node.js) developer by designing and developing both Frontend and Backend modules as well as developing API Services.",
+                                "Worked on Multi domain Mobile apps and API services like Food catalogue (Zomato), Book Movie Tickets (Justickets), Cab  Booking (Ola), Content (News/Media) oriented Apps as an extension to the core app.",
+                                "Strong programming Skills in JavaScript (ECMA2016 / ES6 Standard), Mobility, Web technologies and Scripting Languages."
+                               
+                            ],
+                            achievement: [
+                                "<b>In a short span of time involved, developed and published apps</b> like Online Food catalogue, Movie Ticket Book, Cab Book and optimizations for existing apps was much appreciated by Product Manager."
+                                
+                            ]
+                        },
+                        {
                             designation: "Senior Engineer",
                             company: "Brillio",
                             location: "Bengaluru",
                             from: "Mar-2017",
-                            to: "Present",
+                            to: "Dec-2017",
                             summary: [
                                 "Working as a MEAN Stack (Node, Angular, MongoDB, Express) Developer by designing and developing both Frontend and Backend modules as well as developing API Services.",
                                 "Managing a team of four peoples and experienced in deploying Cloud Solutions like Microsoft Azure, Heroku and IBM Bluemix.",
