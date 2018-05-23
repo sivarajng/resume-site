@@ -23,6 +23,23 @@ import { Component } from '@angular/core';
 export class Projects {
 
   projects = [
+	                          {
+                            name: "MicroApps and Content App",
+                            client: "",
+                            coreApplications: ["React-Native, Redux, Node.JS, MongoDB, Google Cloud Platform"],
+                            teamSize: 8,
+                            from: "from",
+                            to: "to",
+                            summary: [
+                                "Hike Messenger is an Indian revival of Whatsapp. This project is about designing and developing a React-Native micro apps on top of the Core Platform and also developing Backend Services (on GCP) for the micro apps. We created micro apps and API services like Food catalogue (Zomato), Book Movie Tickets (Justickets), Cab Booking (Ola), etc. from scratch by partnering with respective service vendors and few of them were published to millions of users. Also developing a content (News/Entertainment) oriented app from scratch."
+                            ],
+                            roles: [
+                                "Designing and developing the Micro Apps from scratch. Taken ownership of the App publish pipeline like alpha to production release.",
+                                "Implement Analytics service and capture key user events and based on that enhance the app’s user flow.",
+                                "Work on the design and development of the Server side logics and integrate with the Mobile App functionalities.",
+                                "Contributing for the content app’s data source analysis for Tamil language part and also translation elements for the content app."
+                            ]
+                        },
     {
       name: "Cloud Server and Mobile App for digitizing Dealer activities",
       client: "Leading Car Manufacturer ",
