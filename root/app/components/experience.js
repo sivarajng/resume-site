@@ -42,7 +42,7 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                             from: "Mar-2017",
                             to: "Dec-2017",
                             summary: [
-                                "Working as a MEAN Stack (Node, Angular, MongoDB, Express) Developer by designing and developing both Frontend and Backend modules as well as developing API Services.",
+                                "Worked as a MEAN Stack (Node, Angular, MongoDB, Express) and React-Native Developer by designing and developing both Frontend and Backend modules as well as developing API Services.",
                                 "Managing a team of four peoples and experienced in deploying Cloud Solutions like Microsoft Azure, Heroku and IBM Bluemix.",
                                 "Also working in compliance with Agile Methodologies through JIRA and Visual Studio Team Services.",
                                 "Strong programming Skills in NodeJS (ECMA2016 / ES6 Standard), Core Java, Mobility, Web technologies and Scripting Languages.",
