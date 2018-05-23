@@ -23,6 +23,23 @@ import { Component } from '@angular/core';
 export class Experience {
 
   experiences = [
+	  {
+                            designation: "Software Development Engineer",
+                            company: "Hike Messenger",
+                            location: "Bengaluru",
+                            from: "Dec-2017",
+                            to: "Present",
+                            summary: [
+                                "Working as an Mobile App (React Native) and Backend (Node.js) developer by designing and developing both Frontend and Backend modules as well as developing API Services.",
+                                "Worked on Multi domain Mobile apps and API services like Food catalogue (Zomato), Book Movie Tickets (Justickets), Cab  Booking (Ola), Content (News/Media) oriented Apps as an extension to the core app.",
+                                "Strong programming Skills in JavaScript (ECMA2016 / ES6 Standard), Mobility, Web technologies and Scripting Languages."
+                               
+                            ],
+                            achievement: [
+                                "<b>In a short span of time involved, developed and published apps</b> like Online Food catalogue, Movie Ticket Book, Cab Book and optimizations for existing apps was much appreciated by Product Manager."
+                                
+                            ]
+                        },
     {
       designation: "Senior Engineer",
       company: "Brillio",
